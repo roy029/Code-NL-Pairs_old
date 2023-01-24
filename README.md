@@ -1,7 +1,5 @@
 # Code-NL-Pairs
-FOSE2023
-
-実験に使用したデータセットは以下の通り
+FOSE2023で実験に使用したデータセットは以下の通り
 - コード生成: プログラム処理内容を示す文章からコードを生成
   - 英語 to Python
   - 日本語　to Python
@@ -13,5 +11,5 @@ FOSE2023
   - ErrorFix
 - エラー診断: エラーメッセージとエラー箇所のコードからエラー解決のヒントを生成する
   
-
+![dataset](https://github.com/roy029/Code-NL-Pairs/blob/main/dataset_size.png)
 
