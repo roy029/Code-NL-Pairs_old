@@ -1,0 +1,400 @@
+{"in":"send a signal `signal.SIGUSR1` to the current process","out":"os.kill(os.getpid(), signal.SIGUSR1)"}
+{"in":"decode a hex string '4a4b4c' to UTF-8.","out":"bytes.fromhex('4a4b4c').decode('utf-8')"}
+{"in":"check if all elements in list `myList` are identical","out":"all(x == myList[0] for x in myList)"}
+{"in":"format number of spaces between strings `Python`, `:` and `Very Good` to be `20`","out":"print('%*s : %*s' % (20, 'Python', 20, 'Very Good'))"}
+{"in":"How to convert a string from CP-1251 to UTF-8?","out":"d.decode('cp1251').encode('utf8')"}
+{"in":"get rid of None values in dictionary `kwargs`","out":"res = {k: v for k, v in list(kwargs.items()) if v is not None}"}
+{"in":"get rid of None values in dictionary `kwargs`","out":"res = dict((k, v) for k, v in kwargs.items() if v is not None)"}
+{"in":"capture final output of a chain of system commands `ps -ef | grep something | wc -l`","out":"subprocess.check_output('ps -ef | grep something | wc -l', shell=True)"}
+{"in":"concatenate a list of strings `['a', 'b', 'c']`","out":"''''''.join(['a', 'b', 'c'])"}
+{"in":"find intersection data between series `s1` and series `s2`","out":"pd.Series(list(set(s1).intersection(set(s2))))"}
+{"in":"sending http headers to `client`","out":"client.send('HTTP\/1.0 200 OK\\r\\n')"}
+{"in":"Format a datetime string `when` to extract date only","out":"then = datetime.datetime.strptime(when, '%Y-%m-%d').date()"}
+{"in":"split a multi-line string `inputString` into separate strings","out":"inputString.split('\\n')"}
+{"in":"Split a multi-line string ` a \\n b \\r\\n c ` by new line character `\\n`","out":"' a \\n b \\r\\n c '.split('\\n')"}
+{"in":"concatenate elements of list `b` by a colon ':'","out":"''':'''.join(str(x) for x in b)"}
+{"in":"get the first object from a queryset in django model `Entry`","out":"Entry.objects.filter()[:1].get()"}
+{"in":"Calculate sum over all rows of 2D numpy array","out":"a.sum(axis=1)"}
+{"in":"enable warnings using action 'always'","out":"warnings.simplefilter('always')"}
+{"in":"concatenate items of list `l` with a space ' '","out":"print(' '.join(map(str, l)))"}
+{"in":"run script 'hello.py' with argument 'htmlfilename.htm' on terminal using python executable","out":"subprocess.call(['python.exe', 'hello.py', 'htmlfilename.htm'])"}
+{"in":"How can I parse a time string containing milliseconds in it with python?","out":"time.strptime('30\/03\/09 16:31:32.123', '%d\/%m\/%y %H:%M:%S.%f')"}
+{"in":"convert a string `my_string` with dot and comma into a float number `my_float`","out":"my_float = float(my_string.replace(',', ''))"}
+{"in":"convert a string `123,456.908` with dot and comma into a floating number","out":"float('123,456.908'.replace(',', ''))"}
+{"in":"set pythonpath in python script.","out":"sys.path.append('\/path\/to\/whatever')"}
+{"in":"split string 'Words, words, words.' using a regex '(\\\\W+)'","out":"re.split('(\\\\W+)', 'Words, words, words.')"}
+{"in":"open a file `Output.txt` in append mode","out":"file = open('Output.txt', 'a')"}
+{"in":"download a file 'http:\/\/www.example.com\/songs\/mp3.mp3' over HTTP and save to 'mp3.mp3'","out":"urllib.request.urlretrieve('http:\/\/www.example.com\/songs\/mp3.mp3', 'mp3.mp3')"}
+{"in":"download a file `url` over HTTP and save to `file_name`","out":"u = urllib.request.urlopen(url)f = open(file_name, 'wb')meta = u.info()file_size = int(meta.getheaders('Content-Length')[0])print(('Downloading: %s Bytes: %s' % (file_name, file_size)))file_size_dl = 0block_sz = 8192while True:    buffer = u.read(block_sz)    if (not buffer):        break    file_size_dl += len(buffer)    f.write(buffer)    status = ('%10d  [%3.2f%%]' % (file_size_dl, ((file_size_dl * 100.0) \/ file_size)))    status = (status + (chr(8) * (len(status) + 1)))    print(status, end=' ')f.close()"}
+{"in":"download a file 'http:\/\/www.example.com\/' over HTTP","out":"response = urllib.request.urlopen('http:\/\/www.example.com\/')html = response.read()"}
+{"in":"download a file `url` over HTTP","out":"r = requests.get(url)"}
+{"in":"download a file `url` over HTTP and save to '10MB'","out":"response = requests.get(url, stream=True)with open('10MB', 'wb') as handle:    for data in tqdm(response.iter_content()):        handle.write(data)"}
+{"in":"argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`","out":"parser.add_argument('--version', action='version', version='%(prog)s 2.0')"}
+{"in":"remove key 'c' from dictionary `d`","out":"{i: d[i] for i in d if i != 'c'}"}
+{"in":"Create new DataFrame object by merging columns 'key' of  dataframes `split_df` and `csv_df` and rename the columns from dataframes `split_df` and `csv_df` with suffix `_left` and `_right` respectively","out":"pd.merge(split_df, csv_df, on=['key'], suffixes=('_left', '_right'))"}
+{"in":"Split a string `s` by space with `4` splits","out":"s.split(' ', 4)"}
+{"in":"read keyboard-input","out":"input('Enter your input:')"}
+{"in":"enable debug mode on Flask application `app`","out":"app.run(debug=True)"}
+{"in":"python save list `mylist` to file object 'save.txt'","out":"pickle.dump(mylist, open('save.txt', 'wb'))"}
+{"in":"Multiply a matrix `P` with a 3d tensor `T` in scipy","out":"scipy.tensordot(P, T, axes=[1, 1]).swapaxes(0, 1)"}
+{"in":"Create 3d array of zeroes of size `(3,3,3)`","out":"numpy.zeros((3, 3, 3))"}
+{"in":"cut off the last word of a sentence `content`","out":"''' '''.join(content.split(' ')[:-1])"}
+{"in":"convert scalar `x` to array","out":"x = np.asarray(x).reshape(1, -1)[(0), :]"}
+{"in":"sum all elements of nested list `L`","out":"sum(sum(i) if isinstance(i, list) else i for i in L)"}
+{"in":"convert hex string '470FC614' to a float number","out":"struct.unpack('!f', '470FC614'.decode('hex'))[0]"}
+{"in":"Multiple each value by `2` for all keys in a dictionary `my_dict`","out":"my_dict.update((x, y * 2) for x, y in list(my_dict.items()))"}
+{"in":"running bash script 'sleep.sh'","out":"subprocess.call('sleep.sh', shell=True)"}
+{"in":"Join elements of list `l` with a comma `,`","out":"''','''.join(l)"}
+{"in":"make a comma-separated string from a list `myList`","out":"myList = ','.join(map(str, myList))"}
+{"in":"reverse the list that contains 1 to 10","out":"list(reversed(list(range(10))))"}
+{"in":"remove substring 'bag,' from a string 'lamp, bag, mirror'","out":"print('lamp, bag, mirror'.replace('bag,', ''))"}
+{"in":"Reverse the order of words, delimited by `.`, in string `s`","out":"'''.'''.join(s.split('.')[::-1])"}
+{"in":"convert epoch time represented as milliseconds `s` to string using format '%Y-%m-%d %H:%M:%S.%f'","out":"datetime.datetime.fromtimestamp(s).strftime('%Y-%m-%d %H:%M:%S.%f')"}
+{"in":"parse milliseconds epoch time '1236472051807' to format '%Y-%m-%d %H:%M:%S'","out":"time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime(1236472051807 \/ 1000.0))"}
+{"in":"get the date 7 days before the current date","out":"(datetime.datetime.now() - datetime.timedelta(days=7)).date()"}
+{"in":"sum elements at index `column` of each list in list `data`","out":"print(sum(row[column] for row in data))"}
+{"in":"sum columns of a list `array`","out":"[sum(row[i] for row in array) for i in range(len(array[0]))]"}
+{"in":"encode binary string 'your string' to base64 code","out":"base64.b64encode(bytes('your string', 'utf-8'))"}
+{"in":"combine list of dictionaries `dicts` with the same keys in each list to a single dictionary","out":"dict((k, [d[k] for d in dicts]) for k in dicts[0])"}
+{"in":"Merge a nested dictionary `dicts` into a flat dictionary by concatenating nested values with the same key `k`","out":"{k: [d[k] for d in dicts] for k in dicts[0]}"}
+{"in":"How do I get the url parameter in a Flask view","out":"request.args['myParam']"}
+{"in":"identify duplicate values in list `mylist`","out":"[k for k, v in list(Counter(mylist).items()) if v > 1]"}
+{"in":"Insert directory 'apps' into directory `__file__`","out":"sys.path.insert(1, os.path.join(os.path.dirname(__file__), 'apps'))"}
+{"in":"modify sys.path for python module `subdir`","out":"sys.path.append(os.path.join(os.path.dirname(__file__), 'subdir'))"}
+{"in":"Insert a 'None' value into a SQLite3 table.","out":"db.execute('INSERT INTO present VALUES('test2', ?, 10)', (None,))"}
+{"in":"flatten list `list_of_menuitems`","out":"[image for menuitem in list_of_menuitems for image in menuitem]"}
+{"in":"append elements of a set `b` to a list `a`","out":"a.extend(b)"}
+{"in":"Append elements of a set to a list in Python","out":"a.extend(list(b))"}
+{"in":"write the data of dataframe `df` into text file `np.txt`","out":"np.savetxt('c:\\\\data\\\\np.txt', df.values, fmt='%d')"}
+{"in":"write content of DataFrame `df` into text file 'c:\\\\data\\\\pandas.txt'","out":"df.to_csv('c:\\\\data\\\\pandas.txt', header=None, index=None, sep=' ', mode='a')"}
+{"in":"Split a string `x` by last occurrence of character `-`","out":"print(x.rpartition('-')[0])"}
+{"in":"get the last part of a string before the character '-'","out":"print(x.rsplit('-', 1)[0])"}
+{"in":"upload file using FTP","out":"ftp.storlines('STOR ' + filename, open(filename, 'r'))"}
+{"in":"add one to the hidden web element with id 'XYZ' with selenium python script","out":"browser.execute_script('document.getElementById('XYZ').value+='1'')"}
+{"in":"create array containing the maximum value of respective elements of array `[2, 3, 4]` and array `[1, 5, 2]`","out":"np.maximum([2, 3, 4], [1, 5, 2])"}
+{"in":"print a list `l` and move first 3 elements to the end of the list","out":"print(l[3:] + l[:3])"}
+{"in":"loop over files in directory '.'","out":"for fn in os.listdir('.'):    if os.path.isfile(fn):        pass"}
+{"in":"loop over files in directory `source`","out":"for (root, dirs, filenames) in os.walk(source):    for f in filenames:        pass"}
+{"in":"create a random list of integers","out":"[int(1000 * random.random()) for i in range(10000)]"}
+{"in":"Using %f with strftime() in Python to get microseconds","out":"datetime.datetime.now().strftime('%H:%M:%S.%f')"}
+{"in":"Google App Engine execute GQL query 'SELECT * FROM Schedule WHERE station = $1' with parameter `foo.key()`","out":"db.GqlQuery('SELECT * FROM Schedule WHERE station = $1', foo.key())"}
+{"in":"filter rows in pandas starting with alphabet 'f' using regular expression.","out":"df.b.str.contains('^f')"}
+{"in":"print a 2 dimensional list `tab` as a table with delimiters","out":"print('\\n'.join('\\t'.join(str(col) for col in row) for row in tab))"}
+{"in":"pandas: delete rows in dataframe `df` based on multiple columns values","out":"df.set_index(list('BC')).drop(tuples, errors='ignore').reset_index()"}
+{"in":"format the variables `self.goals` and `self.penalties` using string formatting","out":"'''({:d} goals, ${:d})'''.format(self.goals, self.penalties)"}
+{"in":"format string '({} goals, ${})' with variables `goals` and `penalties`","out":"'''({} goals, ${})'''.format(self.goals, self.penalties)"}
+{"in":"format string '({0.goals} goals, ${0.penalties})'","out":"'''({0.goals} goals, ${0.penalties})'''.format(self)"}
+{"in":"convert list of lists `L` to list of integers","out":"[int(''.join(str(d) for d in x)) for x in L]"}
+{"in":"combine elements of each list in list `L` into digits of a single integer","out":"[''.join(str(d) for d in x) for x in L]"}
+{"in":"convert a list of lists `L` to list of integers","out":"L = [int(''.join([str(y) for y in x])) for x in L]"}
+{"in":"write the elements of list `lines` concatenated by special character '\\n' to file `myfile`","out":"myfile.write('\\n'.join(lines))"}
+{"in":"removing an element from a list based on a predicate 'X' or 'N'","out":"[x for x in ['AAT', 'XAC', 'ANT', 'TTA'] if 'X' not in x and 'N' not in x]"}
+{"in":"Remove duplicate words from a string `text` using regex","out":"text = re.sub('\\\\b(\\\\w+)( \\\\1\\\\b)+', '\\\\1', text)"}
+{"in":"count non zero values in each column in pandas data frame","out":"df.astype(bool).sum(axis=1)"}
+{"in":"search for string that matches regular expression pattern '(?<!Distillr)\\\\\\\\AcroTray\\\\.exe' in string 'C:\\\\SomeDir\\\\AcroTray.exe'","out":"re.search('(?<!Distillr)\\\\\\\\AcroTray\\\\.exe', 'C:\\\\SomeDir\\\\AcroTray.exe')"}
+{"in":"split string 'QH QD JC KD JS' into a list on white spaces","out":"'''QH QD JC KD JS'''.split()"}
+{"in":"search for occurrences of regex pattern '>.*<' in xml string `line`","out":"print(re.search('>.*<', line).group(0))"}
+{"in":"erase all the contents of a file `filename`","out":"open(filename, 'w').close()"}
+{"in":"convert a string into datetime using the format '%Y-%m-%d %H:%M:%S.%f'","out":"datetime.datetime.strptime(string_date, '%Y-%m-%d %H:%M:%S.%f')"}
+{"in":"find the index of a list with the first element equal to '332' within the list of lists `thelist`","out":"[index for index, item in enumerate(thelist) if item[0] == '332']"}
+{"in":"lower a string `text` and remove non-alphanumeric characters aside from space","out":"re.sub('[^\\\\sa-zA-Z0-9]', '', text).lower().strip()"}
+{"in":"remove all non-alphanumeric characters except space from a string `text` and lower it","out":"re.sub('(?!\\\\s)[\\\\W_]', '', text).lower().strip()"}
+{"in":"subscript text 'H20' with '2' as subscripted in matplotlib labels for arrays 'x' and 'y'.","out":"plt.plot(x, y, label='H\\u2082O')"}
+{"in":"subscript text 'H20' with '2' as subscripted in matplotlib labels for arrays 'x' and 'y'.","out":"plt.plot(x, y, label='$H_2O$')"}
+{"in":"loop over a list `mylist` if sublists length equals 3","out":"[x for x in mylist if len(x) == 3]"}
+{"in":"initialize a list `lst` of 100 objects Object()","out":"lst = [Object() for _ in range(100)]"}
+{"in":"create list `lst` containing 100 instances of object `Object`","out":"lst = [Object() for i in range(100)]"}
+{"in":"get the content of child tag with`href` attribute whose parent has css `someclass`","out":"self.driver.find_element_by_css_selector('.someclass a').get_attribute('href')"}
+{"in":"joining data from dataframe `df1` with data from dataframe `df2` based on matching values of column 'Date_Time' in both dataframes","out":"df1.merge(df2, on='Date_Time')"}
+{"in":"use `%s` operator to print variable values `str1` inside a string","out":"'first string is: %s, second one is: %s' % (str1, 'geo.tif')"}
+{"in":"Split a string by a delimiter in python","out":"[x.strip() for x in '2.MATCHES $$TEXT$$ STRING'.split('$$TEXT$$')]"}
+{"in":"check if directory `directory ` exists and create it if necessary","out":"if (not os.path.exists(directory)):    os.makedirs(directory)"}
+{"in":"check if a directory `path` exists and create it if necessary","out":"try:    os.makedirs(path)except OSError:    if (not os.path.isdir(path)):        raise"}
+{"in":"check if a directory `path` exists and create it if necessary","out":"distutils.dir_util.mkpath(path)"}
+{"in":"check if a directory `path` exists and create it if necessary","out":"try:    os.makedirs(path)except OSError as exception:    if (exception.errno != errno.EEXIST):        raise"}
+{"in":"Replace a separate word 'H3' by 'H1' in a string 'text'","out":"re.sub('\\\\bH3\\\\b', 'H1', text)"}
+{"in":"substitute ASCII letters in string 'aas30dsa20' with empty string ''","out":"re.sub('\\\\D', '', 'aas30dsa20')"}
+{"in":"get digits only from a string `aas30dsa20` using lambda function","out":"''''''.join([x for x in 'aas30dsa20' if x.isdigit()])"}
+{"in":"access a tag called 'name' in beautifulsoup `soup`","out":"print(soup.find('name').string)"}
+{"in":"get a dictionary `records` of key-value pairs in PyMongo cursor `cursor`","out":"records = dict((record['_id'], record) for record in cursor)"}
+{"in":"Create new matrix object  by concatenating data from matrix A and matrix B","out":"np.concatenate((A, B))"}
+{"in":"concat two matrices `A` and `B` in numpy","out":"np.vstack((A, B))"}
+{"in":"Get the characters count in a file `filepath`","out":"os.stat(filepath).st_size"}
+{"in":"count the occurrences of item 'a' in list `l`","out":"l.count('a')"}
+{"in":"count the occurrences of items in list `l`","out":"Counter(l)"}
+{"in":"count the occurrences of items in list `l`","out":"[[x, l.count(x)] for x in set(l)]"}
+{"in":"count the occurrences of items in list `l`","out":"dict(((x, l.count(x)) for x in set(l)))"}
+{"in":"count the occurrences of item 'b' in list `l`","out":"l.count('b')"}
+{"in":"copy file `srcfile` to directory `dstdir`","out":"shutil.copy(srcfile, dstdir)"}
+{"in":"find the key associated with the largest value in dictionary `x` whilst key is non-zero value","out":"max(k for k, v in x.items() if v != 0)"}
+{"in":"get the largest key whose not associated with value of 0 in dictionary `x`","out":"(k for k, v in x.items() if v != 0)"}
+{"in":"get the largest key in a dictionary `x` with non-zero value","out":"max(k for k, v in x.items() if v != 0)"}
+{"in":"Put the curser at beginning of the file","out":"file.seek(0)"}
+{"in":"combine values from column 'b' and column 'a' of dataframe `df`  into column 'c' of datafram `df`","out":"df['c'] = np.where(df['a'].isnull, df['b'], df['a'])"}
+{"in":"remove key 'ele' from dictionary `d`","out":"del d['ele']"}
+{"in":"Update datetime field in `MyModel` to be the existing `timestamp` plus 100 years","out":"MyModel.objects.update(timestamp=F('timestamp') + timedelta(days=36524.25))"}
+{"in":"merge list `['it']` and list `['was']` and list `['annoying']` into one list","out":"['it'] + ['was'] + ['annoying']"}
+{"in":"increment a value with leading zeroes in a number `x`","out":"str(int(x) + 1).zfill(len(x))"}
+{"in":"check if a pandas dataframe `df`'s index is sorted","out":"all(df.index[:-1] <= df.index[1:])"}
+{"in":"Convert tuple `t` to list","out":"list(t)"}
+{"in":"Convert list `t` to tuple","out":"tuple(l)"}
+{"in":"Convert tuple `level1` to list","out":"level1 = map(list, level1)"}
+{"in":"send the output of pprint object `dataobject` to file `logFile`","out":"pprint.pprint(dataobject, logFile)"}
+{"in":"get index of rows in column 'BoolCol'","out":"df.loc[df['BoolCol']]"}
+{"in":"Create a list containing the indexes of rows where the value of column 'BoolCol' in dataframe `df` are equal to True","out":"df.iloc[np.flatnonzero(df['BoolCol'])]"}
+{"in":"get list of indexes of rows where column 'BoolCol' values match True","out":"df[df['BoolCol'] == True].index.tolist()"}
+{"in":"get index of rows in dataframe `df` which column 'BoolCol' matches value True","out":"df[df['BoolCol']].index.tolist()"}
+{"in":"change working directory to the directory `owd`","out":"os.chdir(owd)"}
+{"in":"insert data from a string `testfield` to sqlite db `c`","out":"c.execute('INSERT INTO test VALUES (?, 'bar')', (testfield,))"}
+{"in":"decode string '\\\\x89\\\\n' into a normal string","out":"'''\\\\x89\\\\n'''.decode('string_escape')"}
+{"in":"convert a raw string `raw_string` into a normal string","out":"raw_string.decode('string_escape')"}
+{"in":"convert a raw string `raw_byte_string` into a normal string","out":"raw_byte_string.decode('unicode_escape')"}
+{"in":"split a string `s` with into all strings of repeated characters","out":"[m.group(0) for m in re.finditer('(\\\\d)\\\\1*', s)]"}
+{"in":"scatter a plot with x, y position of `np.random.randn(100)` and face color equal to none","out":"plt.scatter(np.random.randn(100), np.random.randn(100), facecolors='none')"}
+{"in":"do a scatter plot with empty circles","out":"plt.plot(np.random.randn(100), np.random.randn(100), 'o', mfc='none')"}
+{"in":"remove a div with a id `main-content` using beautifulsoup","out":"soup.find('div', id='main-content').decompose()"}
+{"in":"filter rows containing key word `ball` in column `ids`","out":"df[df['ids'].str.contains('ball')]"}
+{"in":"convert index at level 0 into a column in dataframe `df`","out":"df.reset_index(level=0, inplace=True)"}
+{"in":"Add indexes in a data frame `df` to a column `index1`","out":"df['index1'] = df.index"}
+{"in":"convert pandas index in a dataframe to columns","out":"df.reset_index(level=['tick', 'obs'])"}
+{"in":"Get reverse of list items from list 'b' using extended slicing","out":"[x[::-1] for x in b]"}
+{"in":"join each element in array `a` with element at the same index in array `b` as a tuple","out":"np.array([zip(x, y) for x, y in zip(a, b)])"}
+{"in":"zip two 2-d arrays `a` and `b`","out":"np.array(zip(a.ravel(), b.ravel()), dtype='i4,i4').reshape(a.shape)"}
+{"in":"convert list `list_of_ints` into a comma separated string","out":"''','''.join([str(i) for i in list_of_ints])"}
+{"in":"Send a post request with raw data `DATA` and basic authentication with `username` and `password`","out":"requests.post(url, data=DATA, headers=HEADERS_DICT, auth=(username, password))"}
+{"in":"Find last occurrence of character '}' in string 'abcd}def}'","out":"'abcd}def}'.rfind('}')"}
+{"in":"Iterate ove list `[1, 2, 3]` using list comprehension","out":"print([item for item in [1, 2, 3]])"}
+{"in":"extract all the values with keys 'x' and 'y' from a list of dictionaries `d` to list of tuples","out":"[(x['x'], x['y']) for x in d]"}
+{"in":"get the filename without the extension from file 'hemanth.txt'","out":"print(os.path.splitext(os.path.basename('hemanth.txt'))[0])"}
+{"in":"create a dictionary by adding each two adjacent elements in tuple `x` as key\/value pair to it","out":"dict(x[i:i + 2] for i in range(0, len(x), 2))"}
+{"in":"create a list containing flattened list `[['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']]`","out":"values = sum([['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']], [])"}
+{"in":"select rows in a dataframe `df` column 'closing_price' between two values 99 and 101","out":"df = df[(df['closing_price'] >= 99) & (df['closing_price'] <= 101)]"}
+{"in":"replace all occurences of newlines `\\n` with `<br>` in dataframe `df`","out":"df.replace({'\\n': '<br>'}, regex=True)"}
+{"in":"replace all occurrences of a string `\\n` by string `<br>` in a pandas data frame `df`","out":"df.replace({'\\n': '<br>'}, regex=True)"}
+{"in":"create a list containing each two adjacent letters in string `word` as its elements","out":"[(x + y) for x, y in zip(word, word[1:])]"}
+{"in":"Get a list of pairs from a string `word` using lambda function","out":"list(map(lambda x, y: x + y, word[:-1], word[1:]))"}
+{"in":"extract a url from a string `myString`","out":"print(re.findall('(https?:\/\/[^\\\\s]+)', myString))"}
+{"in":"extract a url from a string `myString`","out":"print(re.search('(?P<url>https?:\/\/[^\\\\s]+)', myString).group('url'))"}
+{"in":"remove all special characters, punctuation and spaces from a string `mystring` using regex","out":"re.sub('[^A-Za-z0-9]+', '', mystring)"}
+{"in":"create a DatetimeIndex containing 13 periods of the second friday of each month starting from date '2016-01-01'","out":"pd.date_range('2016-01-01', freq='WOM-2FRI', periods=13)"}
+{"in":"Create multidimensional array `matrix` with 3 rows and 2 columns in python","out":"matrix = [[a, b], [c, d], [e, f]]"}
+{"in":"replace spaces with underscore","out":"mystring.replace(' ', '_')"}
+{"in":"get an absolute file path of file 'mydir\/myfile.txt'","out":"os.path.abspath('mydir\/myfile.txt')"}
+{"in":"split string `my_string` on white spaces","out":"''' '''.join(my_string.split())"}
+{"in":"get filename without extension from file `filename`","out":"os.path.splitext(filename)[0]"}
+{"in":"get a list containing the sum of each element `i` in list `l` plus the previous elements","out":"[sum(l[:i]) for i, _ in enumerate(l)]"}
+{"in":"split a string `Docs\/src\/Scripts\/temp` by `\/` keeping `\/` in the result","out":"'''Docs\/src\/Scripts\/temp'''.replace('\/', '\/\\x00\/').split('\\x00')"}
+{"in":"shuffle columns of an numpy array 'r'","out":"np.random.shuffle(np.transpose(r))"}
+{"in":"copy all values in a column 'B' to a new column 'D' in a pandas data frame 'df'","out":"df['D'] = df['B']"}
+{"in":"find a value within nested json 'data' where the key inside another key 'B' is unknown.","out":"list(data['A']['B'].values())[0]['maindata'][0]['Info']"}
+{"in":"check characters of string `string` are true predication of function `predicate`","out":"all(predicate(x) for x in string)"}
+{"in":"determine number of files on a drive with python","out":"os.statvfs('\/').f_files - os.statvfs('\/').f_ffree"}
+{"in":"how to get a single result from a SQLite query in python?","out":"cursor.fetchone()[0]"}
+{"in":"convert string `user_input` into a list of integers `user_list`","out":"user_list = [int(number) for number in user_input.split(',')]"}
+{"in":"Get a list of integers by splitting  a string `user` with comma","out":"[int(s) for s in user.split(',')]"}
+{"in":"Sorting a Python list by two criteria","out":"sorted(list, key=lambda x: (x[0], -x[1]))"}
+{"in":"sort a list of objects `ut`, based on a function `cmpfun` in descending order","out":"ut.sort(key=cmpfun, reverse=True)"}
+{"in":"reverse list `ut` based on the `count` attribute of each object","out":"ut.sort(key=lambda x: x.count, reverse=True)"}
+{"in":"sort a list of objects `ut` in reverse order by their `count` property","out":"ut.sort(key=lambda x: x.count, reverse=True)"}
+{"in":"click a href button 'Send' with selenium","out":"driver.find_element_by_partial_link_text('Send').click()"}
+{"in":"click a href button having text `Send InMail` with selenium","out":"driver.findElement(By.linkText('Send InMail')).click()"}
+{"in":"click a href button with text 'Send InMail' with selenium","out":"driver.find_element_by_link_text('Send InMail').click()"}
+{"in":"cast an int `i` to a string and concat to string 'ME'","out":"'ME' + str(i)"}
+{"in":"Sorting data in DataFrame Pandas","out":"df.sort_values(['System_num', 'Dis'])"}
+{"in":"prepend the line '#test firstline\\n' to the contents of file 'infile' and save as the file 'outfile'","out":"open('outfile', 'w').write('#test firstline\\n' + open('infile').read())"}
+{"in":"sort a list `l` by length of value in tuple","out":"l.sort(key=lambda t: len(t[1]), reverse=True)"}
+{"in":"split string `s` by words that ends with 'd'","out":"re.findall('\\\\b(\\\\w+)d\\\\b', s)"}
+{"in":"return `True` if string `foobarrrr` contains regex `ba[rzd]`","out":"bool(re.search('ba[rzd]', 'foobarrrr'))"}
+{"in":"Removing duplicates in list `t`","out":"list(set(t))"}
+{"in":"Removing duplicates in list `source_list`","out":"list(set(source_list))"}
+{"in":"Removing duplicates in list `abracadabra`","out":"list(OrderedDict.fromkeys('abracadabra'))"}
+{"in":"Convert array `a` into a list","out":"numpy.array(a).reshape(-1).tolist()"}
+{"in":"Convert the first row of numpy matrix `a` to a list","out":"numpy.array(a)[0].tolist()"}
+{"in":"In `soup`, get the content of the sibling of the `td`  tag with text content `Address:`","out":"print(soup.find(text='Address:').findNext('td').contents[0])"}
+{"in":"convert elements of each tuple in list `l` into a string  separated by character `@`","out":"''' '''.join([('%d@%d' % t) for t in l])"}
+{"in":"convert each tuple in list `l` to a string with '@' separating the tuples' elements","out":"''' '''.join([('%d@%d' % (t[0], t[1])) for t in l])"}
+{"in":"get the html from the current web page of a Selenium driver","out":"driver.execute_script('return document.documentElement.outerHTML;')"}
+{"in":"Get all matches with regex pattern `\\\\d+[xX]` in list of string `teststr`","out":"[i for i in teststr if re.search('\\\\d+[xX]', i)]"}
+{"in":"select values from column 'A' for which corresponding values in column 'B' will be greater than 50, and in column 'C' - equal 900 in dataframe `df`","out":"df['A'][(df['B'] > 50) & (df['C'] == 900)]"}
+{"in":"Sort dictionary `o` in ascending order based on its keys and items","out":"sorted(o.items())"}
+{"in":"get sorted list of keys of dict `d`","out":"sorted(d)"}
+{"in":"How to sort dictionaries by keys in Python","out":"sorted(d.items())"}
+{"in":"convert string '1' into integer","out":"int('1')"}
+{"in":"function to convert strings into integers","out":"int()"}
+{"in":"convert items in `T1` to integers","out":"T2 = [map(int, x) for x in T1]"}
+{"in":"call a shell script `.\/test.sh` using subprocess","out":"subprocess.call(['.\/test.sh'])"}
+{"in":"call a shell script `notepad` using subprocess","out":"subprocess.call(['notepad'])"}
+{"in":"combine lists `l1` and `l2`  by alternating their elements","out":"[val for pair in zip(l1, l2) for val in pair]"}
+{"in":"encode string 'data to be encoded'","out":"encoded = base64.b64encode('data to be encoded')"}
+{"in":"encode a string `data to be encoded` to `ascii` encoding","out":"encoded = 'data to be encoded'.encode('ascii')"}
+{"in":"parse tab-delimited CSV file 'text.txt' into a list","out":"lol = list(csv.reader(open('text.txt', 'rb'), delimiter='\\t'))"}
+{"in":"Get attribute `my_str` of object `my_object`","out":"getattr(my_object, my_str)"}
+{"in":"group a list of dicts `LD` into one dict by key","out":"print(dict(zip(LD[0], zip(*[list(d.values()) for d in LD]))))"}
+{"in":"How do I sum the first value in each tuple in a list of tuples in Python?","out":"sum([pair[0] for pair in list_of_pairs])"}
+{"in":"convert unicode string u'{'code1':1,'code2':1}' into dictionary","out":"d = ast.literal_eval('{'code1':1,'code2':1}')"}
+{"in":"find all words in a string `mystring` that start with the `$` sign","out":"[word for word in mystring.split() if word.startswith('$')]"}
+{"in":"remove any url within string `text`","out":"text = re.sub('^https?:\\\\\/\\\\\/.*[\\\\r\\\\n]*', '', text, flags=re.MULTILINE)"}
+{"in":"replace all elements in array `A` that are not present in array `[1, 3, 4]` with zeros","out":"np.where(np.in1d(A, [1, 3, 4]).reshape(A.shape), A, 0)"}
+{"in":"calculate mean across dimension in a 2d array `a`","out":"np.mean(a, axis=1)"}
+{"in":"running r script '\/pathto\/MyrScript.r' from python","out":"subprocess.call(['\/usr\/bin\/Rscript', '--vanilla', '\/pathto\/MyrScript.r'])"}
+{"in":"run r script '\/usr\/bin\/Rscript --vanilla \/pathto\/MyrScript.r'","out":"subprocess.call('\/usr\/bin\/Rscript --vanilla \/pathto\/MyrScript.r', shell=True)"}
+{"in":"add a header to a csv file","out":"writer.writeheader()"}
+{"in":"replacing nan in the dataframe `df` with row average","out":"df.fillna(df.mean(axis=1), axis=1)"}
+{"in":"Convert unix timestamp '1347517370' to formatted string '%Y-%m-%d %H:%M:%S'","out":"time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(1347517370))"}
+{"in":"Call a base class's class method `do` from derived class `Derived`","out":"super(Derived, cls).do(a)"}
+{"in":"selecting rows in Numpy ndarray 'a', where the value in the first column is 0 and value in the second column is 1","out":"a[np.where((a[:, (0)] == 0) * (a[:, (1)] == 1))]"}
+{"in":"separate words delimited by one or more spaces into a list","out":"re.split(' +', 'hello world sample text')"}
+{"in":"length of longest element in list `words`","out":"len(max(words, key=len))"}
+{"in":"get the value associated with unicode key 'from_user' of first dictionary in list `result`","out":"result[0]['from_user']"}
+{"in":"Retrieve each line from a file 'File.txt' as a list","out":"[line.split() for line in open('File.txt')]"}
+{"in":"swap keys with values in a dictionary `a`","out":"res = dict((v, k) for k, v in a.items())"}
+{"in":"Open a file `path\/to\/FILE_NAME.ext` in write mode","out":"new_file = open('path\/to\/FILE_NAME.ext', 'w')"}
+{"in":"How to count distinct values in a column of a pandas group by object?","out":"df.groupby(['col1', 'col2'])['col3'].nunique().reset_index()"}
+{"in":"Check if any key in the dictionary `dict1` starts with the string `EMP$$`","out":"any(key.startswith('EMP$$') for key in dict1)"}
+{"in":"create list of values from dictionary `dict1` that have a key that starts with 'EMP$$'","out":"[value for key, value in list(dict1.items()) if key.startswith('EMP$$')]"}
+{"in":"convert a pandas series `sf` into a pandas dataframe `df` with columns `email` and `list`","out":"pd.DataFrame({'email': sf.index, 'list': sf.values})"}
+{"in":"print elements of list `list` seperated by tabs `\\t`","out":"print('\\t'.join(map(str, list)))"}
+{"in":"print unicode string '\\xd0\\xbf\\xd1\\x80\\xd0\\xb8' with utf-8","out":"print('\\xd0\\xbf\\xd1\\x80\\xd0\\xb8'.encode('raw_unicode_escape'))"}
+{"in":"Encode a latin character in string `Sopet\\xc3\\xb3n` properly","out":"'Sopet\\xc3\\xb3n'.encode('latin-1').decode('utf-8')"}
+{"in":"resized image `image` to width, height of `(x, y)` with filter of `ANTIALIAS`","out":"image = image.resize((x, y), Image.ANTIALIAS)"}
+{"in":"regex, find 'n's only in the middle of string `s`","out":"re.findall('n(?<=[^n]n)n+(?=[^n])(?i)', s)"}
+{"in":"display the float `1\/3*100` as a percentage","out":"print('{0:.0f}%'.format(1.0 \/ 3 * 100))"}
+{"in":"sort a list of dictionary `mylist` by the key `title`","out":"mylist.sort(key=lambda x: x['title'])"}
+{"in":"sort a list `l` of dicts by dict value 'title'","out":"l.sort(key=lambda x: x['title'])"}
+{"in":"sort a list of dictionaries by the value of keys 'title', 'title_url', 'id' in ascending order.","out":"l.sort(key=lambda x: (x['title'], x['title_url'], x['id']))"}
+{"in":"find 10 largest differences between each respective elements of list `l1` and list `l2`","out":"heapq.nlargest(10, range(len(l1)), key=lambda i: abs(l1[i] - l2[i]))"}
+{"in":"BeautifulSoup find all 'span' elements in HTML string `soup` with class of 'starGryB sp'","out":"soup.find_all('span', {'class': 'starGryB sp'})"}
+{"in":"write records in dataframe `df` to table 'test' in schema 'a_schema'","out":"df.to_sql('test', engine, schema='a_schema')"}
+{"in":"Extract brackets from string `s`","out":"brackets = re.sub('[^(){}[\\\\]]', '', s)"}
+{"in":"remove duplicate elements from list 'L'","out":"list(dict((x[0], x) for x in L).values())"}
+{"in":"read a file `file` without newlines","out":"[line.rstrip('\\n') for line in file]"}
+{"in":"get the position of item 1 in `testlist`","out":"[i for (i, x) in enumerate(testlist) if (x == 1)]"}
+{"in":"get the position of item 1 in `testlist`","out":"[i for (i, x) in enumerate(testlist) if (x == 1)]"}
+{"in":"get the position of item 1 in `testlist`","out":"for i in [i for (i, x) in enumerate(testlist) if (x == 1)]:    pass"}
+{"in":"get the position of item 1 in `testlist`","out":"for i in (i for (i, x) in enumerate(testlist) if (x == 1)):    pass"}
+{"in":"get the position of item 1 in `testlist`","out":"gen = (i for (i, x) in enumerate(testlist) if (x == 1))for i in gen:    pass"}
+{"in":"get the position of item `element` in list `testlist`","out":"print(testlist.index(element))"}
+{"in":"get the position of item `element` in list `testlist`","out":"try:    print(testlist.index(element))except ValueError:    pass"}
+{"in":"find the first element of the tuple with the maximum second element in a list of tuples `lis`","out":"max(lis, key=lambda item: item[1])[0]"}
+{"in":"get the item at index 0 from the tuple that has maximum value at index 1 in list `lis`","out":"max(lis, key=itemgetter(1))[0]"}
+{"in":"Make a delay of 1 second","out":"time.sleep(1)"}
+{"in":"convert list of tuples `L` to a string","out":"''', '''.join('(' + ', '.join(i) + ')' for i in L)"}
+{"in":"Django set default value of field `b` equal to '0000000'","out":"b = models.CharField(max_length=7, default='0000000', editable=False)"}
+{"in":"Sort lis `list5` in ascending order based on the degrees value of its elements","out":"sorted(list5, lambda x: (degree(x), x))"}
+{"in":"How do I perform secondary sorting in python?","out":"sorted(list5, key=lambda vertex: (degree(vertex), vertex))"}
+{"in":"convert a list  into a generator object","out":"(n for n in [1, 2, 3, 5])"}
+{"in":"remove elements from list `oldlist` that have an index number mentioned in list `removelist`","out":"newlist = [v for i, v in enumerate(oldlist) if i not in removelist]"}
+{"in":"Open a file `yourfile.txt` in write mode","out":"f = open('yourfile.txt', 'w')"}
+{"in":"get attribute 'attr' from object `obj`","out":"getattr(obj, 'attr')"}
+{"in":"convert tuple of tuples `(('aa',), ('bb',), ('cc',))` to tuple","out":"from functools import reducereduce(lambda a, b: a + b, (('aa',), ('bb',), ('cc',)))"}
+{"in":"convert tuple of tuples `(('aa',), ('bb',), ('cc',))` to list in one line","out":"map(lambda a: a[0], (('aa',), ('bb',), ('cc',)))"}
+{"in":"Python Pandas: How to replace a characters in a column of a dataframe?","out":"df['range'].replace(',', '-', inplace=True)"}
+{"in":"unzip the list `[('a', 1), ('b', 2), ('c', 3), ('d', 4)]`","out":"zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4)])"}
+{"in":"unzip the list `[('a', 1), ('b', 2), ('c', 3), ('d', 4)]`","out":"zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4)])"}
+{"in":"unzip list `original`","out":"result = ([a for (a, b) in original], [b for (a, b) in original])"}
+{"in":"unzip list `original` and return a generator","out":"result = ((a for (a, b) in original), (b for (a, b) in original))"}
+{"in":"unzip list `[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', )]`","out":"zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e',)])"}
+{"in":"unzip list `[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', )]` and fill empty results with None","out":"map(None, *[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e',)])"}
+{"in":"encode `Decimal('3.9')` to a JSON string","out":"json.dumps(Decimal('3.9'))"}
+{"in":"Add key 'mynewkey' to dictionary `d` with value 'mynewvalue'","out":"d['mynewkey'] = 'mynewvalue'"}
+{"in":"Add key 'a' to dictionary `data` with value 1","out":"data.update({'a': 1, })"}
+{"in":"Add key 'a' to dictionary `data` with value 1","out":"data.update(dict(a=1))"}
+{"in":"Add key 'a' to dictionary `data` with value 1","out":"data.update(a=1)"}
+{"in":"find maximal value in matrix `matrix`","out":"max([max(i) for i in matrix])"}
+{"in":"Round number `answer` to 2 precision after the decimal point","out":"answer = str(round(answer, 2))"}
+{"in":"extract ip address from an html string","out":"ip = re.findall('[0-9]+(?:\\\\.[0-9]+){3}', s)"}
+{"in":"filter dataframe `df` by values in column `A` that appear more than once","out":"df.groupby('A').filter(lambda x: len(x) > 1)"}
+{"in":"append each line in file `myfile` into a list","out":"[x for x in myfile.splitlines() if x != '']"}
+{"in":"Get a list of integers `lst` from a file `filename.txt`","out":"lst = map(int, open('filename.txt').readlines())"}
+{"in":"add color bar with image `mappable` to plot `plt`","out":"plt.colorbar(mappable=mappable, cax=ax3)"}
+{"in":"count most frequent 100 words in column 'text' of dataframe `df`","out":"Counter(' '.join(df['text']).split()).most_common(100)"}
+{"in":"Python split a string using regex","out":"re.findall('(.+?):(.+?)\\\\b ?', text)"}
+{"in":"generate all 2-element subsets of tuple `(1, 2, 3)`","out":"list(itertools.combinations((1, 2, 3), 2))"}
+{"in":"get a value of datetime.today() in the UTC time zone","out":"datetime.now(pytz.utc)"}
+{"in":"Get a new list `list2`by removing empty list from a list of lists `list1`","out":"list2 = [x for x in list1 if x != []]"}
+{"in":"Create `list2` to contain the lists from list `list1` excluding the empty lists from `list1`","out":"list2 = [x for x in list1 if x]"}
+{"in":"Django response with JSON `data`","out":"return HttpResponse(data, mimetype='application\/json')"}
+{"in":"get all text that is not enclosed within square brackets in string `example_str`","out":"re.findall('(.*?)\\\\[.*?\\\\]', example_str)"}
+{"in":"Use a regex to get all text in a string `example_str` that is not surrounded by square brackets","out":"re.findall('(.*?)(?:\\\\[.*?\\\\]|$)', example_str)"}
+{"in":"get whatever is between parentheses as a single match, and any char outside as an individual match in string '(zyx)bc'","out":"re.findall('\\\\(.+?\\\\)|\\\\w', '(zyx)bc')"}
+{"in":"match regex '\\\\((.*?)\\\\)|(\\\\w)' with string '(zyx)bc'","out":"re.findall('\\\\((.*?)\\\\)|(\\\\w)', '(zyx)bc')"}
+{"in":"match multiple regex patterns with the alternation operator `|` in a string `(zyx)bc`","out":"re.findall('\\\\(.*?\\\\)|\\\\w', '(zyx)bc')"}
+{"in":"formate each string cin list `elements` into pattern '%{0}%'","out":"elements = ['%{0}%'.format(element) for element in elements]"}
+{"in":"Open a background process 'background-process' with arguments 'arguments'","out":"subprocess.Popen(['background-process', 'arguments'])"}
+{"in":"get list of values from dictionary 'mydict' w.r.t. list of keys 'mykeys'","out":"[mydict[x] for x in mykeys]"}
+{"in":"convert list `[('Name', 'Joe'), ('Age', 22)]` into a dictionary","out":"dict([('Name', 'Joe'), ('Age', 22)])"}
+{"in":"average each two columns of array `data`","out":"data.reshape(-1, j).mean(axis=1).reshape(data.shape[0], -1)"}
+{"in":"double backslash escape all double quotes in string `s`","out":"print(s.encode('unicode-escape').replace(''', '\\\\''))"}
+{"in":"split a string into a list of words and whitespace","out":"re.split('(\\\\W+)', s)"}
+{"in":"plotting stacked barplots on a panda data frame","out":"df.plot(kind='barh', stacked=True)"}
+{"in":"reverse the keys and values in a dictionary `myDictionary`","out":"{i[1]: i[0] for i in list(myDictionary.items())}"}
+{"in":"finding the index of elements containing substring 'how' and 'what' in a list of strings 'myList'.","out":"[i for i, j in enumerate(myList) if 'how' in j.lower() or 'what' in j.lower()]"}
+{"in":"check if object `obj` is a string","out":"isinstance(obj, str)"}
+{"in":"check if object `o` is a string","out":"isinstance(o, str)"}
+{"in":"check if object `o` is a string","out":"(type(o) is str)"}
+{"in":"check if object `o` is a string","out":"isinstance(o, str)"}
+{"in":"check if `obj_to_test` is a string","out":"isinstance(obj_to_test, str)"}
+{"in":"append list `list1` to `list2`","out":"list2.extend(list1)"}
+{"in":"append list `mylog` to `list1`","out":"list1.extend(mylog)"}
+{"in":"append list `a` to `c`","out":"c.extend(a)"}
+{"in":"append items in list `mylog` to `list1`","out":"for line in mylog:    list1.append(line)"}
+{"in":"append a tuple of elements from list `a` with indexes '[0][0] [0][2]' to list `b`","out":"b.append((a[0][0], a[0][2]))"}
+{"in":"Initialize `SECRET_KEY` in flask config with `Your_secret_string `","out":"app.config['SECRET_KEY'] = 'Your_secret_string'"}
+{"in":"unpack a series of tuples in pandas into a DataFrame with column names 'out-1' and 'out-2'","out":"pd.DataFrame(out.tolist(), columns=['out-1', 'out-2'], index=out.index)"}
+{"in":"find the index of an element 'MSFT' in a list `stocks_list`","out":"[x for x in range(len(stocks_list)) if stocks_list[x] == 'MSFT']"}
+{"in":"rotate the xtick labels of matplotlib plot `ax` by `45` degrees to make long labels readable","out":"ax.set_xticklabels(labels, rotation=45)"}
+{"in":"remove symbols from a string `s`","out":"re.sub('[^\\\\w]', ' ', s)"}
+{"in":"Get the current directory of a script","out":"os.path.basename(os.path.dirname(os.path.realpath(__file__)))"}
+{"in":"Find octal characters matches from a string `str` using regex","out":"print(re.findall(''\\\\\\\\[0-7]{1,3}'', str))"}
+{"in":"split string `input` based on occurrences of regex pattern '[ ](?=[A-Z]+\\\\b)'","out":"re.split('[ ](?=[A-Z]+\\\\b)', input)"}
+{"in":"Split string `input` at every space followed by an upper-case letter","out":"re.split('[ ](?=[A-Z])', input)"}
+{"in":"send multipart encoded file `files` to url `url` with headers `headers` and metadata `data`","out":"r = requests.post(url, files=files, headers=headers, data=data)"}
+{"in":"write bytes `bytes_` to a file `filename` in python 3","out":"open('filename', 'wb').write(bytes_)"}
+{"in":"get a list from a list `lst` with values mapped into a dictionary `dct`","out":"[dct[k] for k in lst]"}
+{"in":"find duplicate names in column 'name' of the dataframe `x`","out":"x.set_index('name').index.get_duplicates()"}
+{"in":"truncate float 1.923328437452 to 3 decimal places","out":"round(1.923328437452, 3)"}
+{"in":"sort list `li` in descending order based on the date value in second element of each list in list `li`","out":"sorted(li, key=lambda x: datetime.strptime(x[1], '%d\/%m\/%Y'), reverse=True)"}
+{"in":"place the radial ticks in plot `ax` at 135 degrees","out":"ax.set_rlabel_position(135)"}
+{"in":"check if path `my_path` is an absolute path","out":"os.path.isabs(my_path)"}
+{"in":"get number of keys in dictionary `yourdict`","out":"len(list(yourdict.keys()))"}
+{"in":"count the number of keys in dictionary `yourdictfile`","out":"len(set(open(yourdictfile).read().split()))"}
+{"in":"pandas dataframe get first row of each group by 'id'","out":"df.groupby('id').first()"}
+{"in":"split a list in first column  into multiple columns keeping other columns as well in pandas data frame","out":"pd.concat([df[0].apply(pd.Series), df[1]], axis=1)"}
+{"in":"extract attributes 'src='js\/([^']*\\\\bjquery\\\\b[^']*)'' from string `data`","out":"re.findall('src='js\/([^']*\\\\bjquery\\\\b[^']*)'', data)"}
+{"in":"Sum integers contained in strings in list `['', '3.4', '', '', '1.0']`","out":"sum(int(float(item)) for item in [_f for _f in ['', '3.4', '', '', '1.0'] if _f])"}
+{"in":"Call a subprocess with arguments `c:\\\\Program Files\\\\VMware\\\\VMware Server\\\\vmware-cmd.bat` that may contain spaces","out":"subprocess.Popen(['c:\\\\Program Files\\\\VMware\\\\VMware Server\\\\vmware-cmd.bat'])"}
+{"in":"reverse a priority queue `q` in python without using classes","out":"q.put((-n, n))"}
+{"in":"make a barplot of data in column `group` of dataframe `df` colour-coded according to list `color`","out":"df['group'].plot(kind='bar', color=['r', 'g', 'b', 'r', 'g', 'b', 'r'])"}
+{"in":"find all matches of regex pattern '([a-fA-F\\\\d]{32})' in string `data`","out":"re.findall('([a-fA-F\\\\d]{32})', data)"}
+{"in":"Get the length of list `my_list`","out":"len(my_list)"}
+{"in":"Getting the length of array `l`","out":"len(l)"}
+{"in":"Getting the length of array `s`","out":"len(s)"}
+{"in":"Getting the length of `my_tuple`","out":"len(my_tuple)"}
+{"in":"Getting the length of `my_string`","out":"len(my_string)"}
+{"in":"remove escape character from string '\\\\a'","out":"'''\\\\a'''.decode('string_escape')"}
+{"in":"replace each 'a' with 'b' and each 'b' with 'a' in the string 'obama' in a single pass.","out":"'''obama'''.replace('a', '%temp%').replace('b', 'a').replace('%temp%', 'b')"}
+{"in":"remove directory tree '\/folder_name'","out":"shutil.rmtree('\/folder_name')"}
+{"in":"create a new column `weekday` in pandas data frame `data` based on the values in column `my_dt`","out":"data['weekday'] = data['my_dt'].apply(lambda x: x.weekday())"}
+{"in":"reverse sort Counter `x` by values","out":"sorted(x, key=x.get, reverse=True)"}
+{"in":"reverse sort counter `x` by value","out":"sorted(list(x.items()), key=lambda pair: pair[1], reverse=True)"}
+{"in":"append a numpy array 'b' to a numpy array 'a'","out":"np.vstack((a, b))"}
+{"in":"numpy concatenate two arrays `a` and `b` along the first axis","out":"print(concatenate((a, b), axis=0))"}
+{"in":"numpy concatenate two arrays `a` and `b` along the second axis","out":"print(concatenate((a, b), axis=1))"}
+{"in":"numpy concatenate two arrays `a` and `b` along the first axis","out":"c = np.r_[(a[None, :], b[None, :])]"}
+{"in":"numpy concatenate two arrays `a` and `b` along the first axis","out":"np.array((a, b))"}
+{"in":"fetch address information for host 'google.com' ion port 80","out":"print(socket.getaddrinfo('google.com', 80))"}
+{"in":"add a column 'day' with value 'sat' to dataframe `df`","out":"df.xs('sat', level='day', drop_level=False)"}
+{"in":"return a 401 unauthorized in django","out":"return HttpResponse('Unauthorized', status=401)"}
+{"in":"Flask set folder 'wherever' as the default template folder","out":"Flask(__name__, template_folder='wherever')"}
+{"in":"How do I INSERT INTO t1 (SELECT * FROM t2) in SQLAlchemy?","out":"session.execute('INSERT INTO t1 (SELECT * FROM t2)')"}
+{"in":"sort a list of lists 'c2' such that third row comes first","out":"c2.sort(key=lambda row: row[2])"}
+{"in":"Sorting a list of lists in Python","out":"c2.sort(key=lambda row: (row[2], row[1], row[0]))"}
+{"in":"Sorting a list of lists in Python","out":"c2.sort(key=lambda row: (row[2], row[1]))"}
+{"in":"set font `Arial` to display non-ascii characters in matplotlib","out":"matplotlib.rc('font', **{'sans-serif': 'Arial', 'family': 'sans-serif'})"}
+{"in":"Convert  DateTime column 'date' of pandas dataframe 'df' to ordinal","out":"df['date'].apply(lambda x: x.toordinal())"}
+{"in":"get html source of Selenium WebElement `element`","out":"element.get_attribute('innerHTML')"}
+{"in":"Get the integer location of a key `bob` in a pandas data frame","out":"df.index.get_loc('bob')"}
+{"in":"open a 'gnome' terminal from python script and run  'sudo apt-get update' command.","out":"os.system('gnome-terminal -e \\'bash -c 'sudo apt-get update; exec bash'\\'')"}
+{"in":"add an item with key 'third_key' and value 1 to an dictionary `my_dict`","out":"my_dict.update({'third_key': 1})"}
+{"in":"declare an array","out":"my_list = []"}
+{"in":"Insert item `12` to a list `my_list`","out":"my_list.append(12)"}

@@ -1,0 +1,100 @@
+{"in":"add an entry 'wuggah' at the beginning of list `myList`","out":"myList.insert(0, 'wuggah')"}
+{"in":"convert a hex-string representation to actual bytes","out":"'''\\\\xF3\\\\xBE\\\\x80\\\\x80'''.replace('\\\\x', '').decode('hex')"}
+{"in":"select the last column of dataframe `df`","out":"df[df.columns[-1]]"}
+{"in":"get the first value from dataframe `df` where column 'Letters' is equal to 'C'","out":"df.loc[df['Letters'] == 'C', 'Letters'].values[0]"}
+{"in":"converting two lists `[1, 2, 3]` and `[4, 5, 6]` into a matrix","out":"np.column_stack(([1, 2, 3], [4, 5, 6]))"}
+{"in":"get the type of `i`","out":"type(i)"}
+{"in":"determine the type of variable `v`","out":"type(v)"}
+{"in":"determine the type of variable `v`","out":"type(v)"}
+{"in":"determine the type of variable `v`","out":"type(v)"}
+{"in":"determine the type of variable `v`","out":"type(v)"}
+{"in":"get the type of variable `variable_name`","out":"print(type(variable_name))"}
+{"in":"get the 5th item of a generator","out":"next(itertools.islice(range(10), 5, 5 + 1))"}
+{"in":"Print a string `word` with string format","out":"print(''{}''.format(word))"}
+{"in":"join a list of strings `list` using a space ' '","out":"''' '''.join(list)"}
+{"in":"create list `y` containing two empty lists","out":"y = [[] for n in range(2)]"}
+{"in":"read a file 'C:\/name\/MyDocuments\/numbers' into a list `data`","out":"data = [line.strip() for line in open('C:\/name\/MyDocuments\/numbers', 'r')]"}
+{"in":"delete all occurrences of character 'i' in string 'it is icy'","out":"''''''.join([char for char in 'it is icy' if char != 'i'])"}
+{"in":"delete all instances of a character 'i' in a string 'it is icy'","out":"re.sub('i', '', 'it is icy')"}
+{"in":"delete all characters 'i' in string 'it is icy'","out":"'''it is icy'''.replace('i', '')"}
+{"in":"How to delete all instances of a character in a string in python?","out":"''''''.join([char for char in 'it is icy' if char != 'i'])"}
+{"in":"Drop rows of pandas dataframe `df` having NaN in column at index '1'","out":"df.dropna(subset=[1])"}
+{"in":"get elements from list `myList`, that have a field `n` value 30","out":"[x for x in myList if x.n == 30]"}
+{"in":"converting list of strings `intstringlist` to list of integer `nums`","out":"nums = [int(x) for x in intstringlist]"}
+{"in":"convert list of string numbers into list of integers","out":"map(int, eval(input('Enter the unfriendly numbers: ')))"}
+{"in":"print '.' without newline","out":"sys.stdout.write('.')"}
+{"in":"round off the float that is the product of `2.52 * 100` and convert it to an int","out":"int(round(2.51 * 100))"}
+{"in":"Find all files in directory '\/mydir' with extension '.txt'","out":"os.chdir('\/mydir')for file in glob.glob('*.txt'):    pass"}
+{"in":"Find all files in directory '\/mydir' with extension '.txt'","out":"for file in os.listdir('\/mydir'):    if file.endswith('.txt'):        pass"}
+{"in":"Find all files in directory '\/mydir' with extension '.txt'","out":"for (root, dirs, files) in os.walk('\/mydir'):    for file in files:        if file.endswith('.txt'):            pass"}
+{"in":"plot dataframe `df` without a legend","out":"df.plot(legend=False)"}
+{"in":"loop through the IP address range '192.168.x.x'","out":"for i in range(256):    for j in range(256):        ip = ('192.168.%d.%d' % (i, j))        print(ip)"}
+{"in":"loop through the IP address range '192.168.x.x'","out":"for (i, j) in product(list(range(256)), list(range(256))):    pass"}
+{"in":"loop through the IP address range '192.168.x.x'","out":"generator = iter_iprange('192.168.1.1', '192.168.255.255', step=1)"}
+{"in":"Sum the corresponding decimal values for binary values of each boolean element in list `x`","out":"sum(1 << i for i, b in enumerate(x) if b)"}
+{"in":"write multiple strings `line1`, `line2` and `line3` in one line in a file `target`","out":"target.write('%r\\n%r\\n%r\\n' % (line1, line2, line3))"}
+{"in":"Convert list of lists `data` into a flat list","out":"[y for x in data for y in (x if isinstance(x, list) else [x])]"}
+{"in":"Print new line character as `\\n` in a string `foo\\nbar`","out":"print('foo\\nbar'.encode('string_escape'))"}
+{"in":"remove last comma character ',' in string `s`","out":"''''''.join(s.rsplit(',', 1))"}
+{"in":"calculate the mean of each element in array `x` with the element previous to it","out":"(x[1:] + x[:-1]) \/ 2"}
+{"in":"get an array of the mean of each two consecutive values in numpy array `x`","out":"x[:-1] + (x[1:] - x[:-1]) \/ 2"}
+{"in":"load data containing `utf-8` from file `new.txt` into numpy array `arr`","out":"arr = numpy.fromiter(codecs.open('new.txt', encoding='utf-8'), dtype='<U2')"}
+{"in":"reverse sort list of dicts `l` by value for key `time`","out":"l = sorted(l, key=itemgetter('time'), reverse=True)"}
+{"in":"Sort a list of dictionary `l` based on key `time` in descending order","out":"l = sorted(l, key=lambda a: a['time'], reverse=True)"}
+{"in":"get rows of dataframe `df` that match regex '(Hel|Just)'","out":"df.loc[df[0].str.contains('(Hel|Just)')]"}
+{"in":"find the string in `your_string` between two special characters '[' and ']'","out":"re.search('\\\\[(.*)\\\\]', your_string).group(1)"}
+{"in":"How to create a list of date string in 'yyyymmdd' format with Python Pandas?","out":"[d.strftime('%Y%m%d') for d in pandas.date_range('20130226', '20130302')]"}
+{"in":"count number of times string 'brown' occurred in string 'The big brown fox is brown'","out":"'''The big brown fox is brown'''.count('brown')"}
+{"in":"decode json string `request.body` to python dict","out":"json.loads(request.body)"}
+{"in":"download the file from url `url` and save it under file `file_name`","out":"urllib.request.urlretrieve(url, file_name)"}
+{"in":"split string `text` by space","out":"text.split()"}
+{"in":"split string `text` by ','","out":"text.split(',')"}
+{"in":"Split string `line` into a list by whitespace","out":"line.split()"}
+{"in":"replace dot characters  '.' associated with ascii letters in list `s` with space ' '","out":"[re.sub('(?<!\\\\d)\\\\.(?!\\\\d)', ' ', i) for i in s]"}
+{"in":"sort list `list_of_strings` based on second index of each string `s`","out":"sorted(list_of_strings, key=lambda s: s.split(',')[1])"}
+{"in":"call multiple bash function \u2018vasp\u2019 and \u2018tee tee_output\u2019 using \u2018|\u2019","out":"subprocess.check_call('vasp | tee tee_output', shell=True)"}
+{"in":"eliminate all strings from list `lst`","out":"[element for element in lst if isinstance(element, int)]"}
+{"in":"get all the elements except strings from the list 'lst'.","out":"[element for element in lst if not isinstance(element, str)]"}
+{"in":"Sort a list of dictionaries `list_to_be_sorted` by the value of the dictionary key `name`","out":"newlist = sorted(list_to_be_sorted, key=lambda k: k['name'])"}
+{"in":"sort a list of dictionaries `l` by values in key `name` in descending order","out":"newlist = sorted(l, key=itemgetter('name'), reverse=True)"}
+{"in":"How do I sort a list of dictionaries by values of the dictionary in Python?","out":"list_of_dicts.sort(key=operator.itemgetter('name'))"}
+{"in":"How do I sort a list of dictionaries by values of the dictionary in Python?","out":"list_of_dicts.sort(key=operator.itemgetter('age'))"}
+{"in":"How to sort a Dataframe by the ocurrences in a column in Python (pandas)","out":"df.groupby('prots').sum().sort('scores', ascending=False)"}
+{"in":"join together with ',' elements inside a list indexed with 'category' within a dictionary `trans`","out":"''','''.join(trans['category'])"}
+{"in":"concatenate array of strings `['A', 'B', 'C', 'D']` into a string","out":"''''''.join(['A', 'B', 'C', 'D'])"}
+{"in":"get json data from restful service 'url'","out":"json.load(urllib.request.urlopen('url'))"}
+{"in":"Remove all strings from a list a strings `sents` where the values starts with `@$\\t` or `#`","out":"[x for x in sents if not x.startswith('@$\\t') and not x.startswith('#')]"}
+{"in":"django filter by hour","out":"Entry.objects.filter(pub_date__contains='08:00')"}
+{"in":"sort a list of dictionary `list` first by key `points` and then by `time`","out":"list.sort(key=lambda item: (item['points'], item['time']))"}
+{"in":"convert datetime object `(1970, 1, 1)` to seconds","out":"(t - datetime.datetime(1970, 1, 1)).total_seconds()"}
+{"in":"insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension.","out":"re.sub('(\\\\_a)?\\\\.([^\\\\.]*)$', '_suff.\\\\2', 'long.file.name.jpg')"}
+{"in":"reload a module `module`","out":"import impimp.reload(module)"}
+{"in":"Convert integer `number` into an unassigned integer","out":"struct.unpack('H', struct.pack('h', number))"}
+{"in":"convert int values in list `numlist` to float","out":"numlist = [float(x) for x in numlist]"}
+{"in":"write dataframe `df`, excluding index, to a csv file","out":"df.to_csv(filename, index=False)"}
+{"in":"convert a urllib unquoted string `unescaped` to a json data `json_data`","out":"json_data = json.loads(unescaped)"}
+{"in":"Create a list containing all ascii characters as its elements","out":"[chr(i) for i in range(127)]"}
+{"in":"write `newFileBytes` to a binary file `newFile`","out":"newFile.write(struct.pack('5B', *newFileBytes))"}
+{"in":"python regex - check for a capital letter with a following lowercase in string `string`","out":"re.sub('^[A-Z0-9]*(?![a-z])', '', string)"}
+{"in":"get the last key of dictionary `dict`","out":"list(dict.keys())[-1]"}
+{"in":"write line 'hi there' to file `f`","out":"print('hi there', file=f)"}
+{"in":"write line 'hi there' to file `myfile`","out":"f = open('myfile', 'w')f.write('hi there\\n')f.close()"}
+{"in":"write line 'Hello' to file `somefile.txt`","out":"with open('somefile.txt', 'a') as the_file:    the_file.write('Hello\\n')"}
+{"in":"convert unicode string `s` to ascii","out":"s.encode('iso-8859-15')"}
+{"in":"Django get maximum value associated with field 'added' in model `AuthorizedEmail`","out":"AuthorizedEmail.objects.filter(group=group).order_by('-added')[0]"}
+{"in":"Find all numbers and dots from a string `text` using regex","out":"re.findall('Test([0-9.]*[0-9]+)', text)"}
+{"in":"python regex  to find all numbers and dots from 'text'","out":"re.findall('Test([\\\\d.]*\\\\d+)', text)"}
+{"in":"execute script 'script.ps1' using 'powershell.exe' shell","out":"os.system('powershell.exe', 'script.ps1')"}
+{"in":"Sort a list of tuples `b` by third item in the tuple","out":"b.sort(key=lambda x: x[1][2])"}
+{"in":"get a list of all keys in Cassandra database `cf` with pycassa","out":"list(cf.get_range().get_keys())"}
+{"in":"create a datetime with the current date & time","out":"datetime.datetime.now()"}
+{"in":"get the index of an integer `1` from a list `lst` if the list also contains boolean items","out":"next(i for i, x in enumerate(lst) if not isinstance(x, bool) and x == 1)"}
+{"in":"subtract 13 from every number in a list `a`","out":"a[:] = [(x - 13) for x in a]"}
+{"in":"choose a random file from the directory contents of the C drive, `C:\\\\`","out":"random.choice(os.listdir('C:\\\\'))"}
+{"in":"get the highest element in absolute value in a numpy matrix `x`","out":"max(x.min(), x.max(), key=abs)"}
+{"in":"Get all urls within text `s`","out":"re.findall(''(http.*?)'', s, re.MULTILINE | re.DOTALL)"}
+{"in":"match urls whose domain doesn't start with `t` from string `document` using regex","out":"re.findall('http:\/\/[^t][^s']+\\\\.html', document)"}
+{"in":"split a string `mystring` considering the spaces ' '","out":"mystring.replace(' ', '! !').split('!')"}
+{"in":"open file `path` with mode 'r'","out":"open(path, 'r')"}
+{"in":"sum elements at the same index in list `data`","out":"[[sum(item) for item in zip(*items)] for items in zip(*data)]"}
+{"in":"add a new axis to array `a`","out":"a[:, (np.newaxis)]"}
