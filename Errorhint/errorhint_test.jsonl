@@ -1,0 +1,789 @@
+{"in":"y_pred = model.predict(X_test)<tab>NameError: name 'model' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"while true :\n<tab>NameError: name 'true' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"model=GradientBoostingRegressor(random_state=0)\n<tab>NameError: name 'GradientBoostingRegressor' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"print(x*)<tab>SyntaxError: invalid syntax (<string>, line 7)","out":"構文エラー、つまり文法的に書き方が間違っています。まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"  calc(s:str)<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。うまく指摘できませんが、余分なゴミがついています。（変なコピペした？）"}
+{"in":"S,T＝ map (int,input().split())<tab>SyntaxError: invalid character in identifier (<string>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"def calc(1+10): return float(s)<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。関数定義の書き方をおさらいしよう"}
+{"in":"X = df[['教員']]  # 説明変数\n<tab>KeyError: \"None of [Index(['教員'], dtype='object')] are in the [columns]\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"l=[int(input().split(\" \")) for i in range(x)]\n<tab>TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'","out":"関数の引数の型が違います。<b>文字列、バイト列もしくは数値<\/b>になるようにしましょう。"}
+{"in":"df3 = df3.rename(columns={'身長_x': ' 身長'}, inplace=True)\n<tab>AttributeError: 'NoneType' object has no attribute 'rename'","out":"レシーバの変数名にNoneを代入してしまいました。"}
+{"in":"for i in sns.kdeplot(df.groupby('母学歴').get_group(i)['G3'], shade = True, label = 'n'):<tab>NameError: name 'i' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print(Hello World)<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。関数を定義しよう"}
+{"in":"plt.scatter(df['父親業'],df['奨学金'])<tab>KeyError: '父親業'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"plt.plot(wights,newdata)<tab>NameError: name 'plt' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"print('相関係数':,r)<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"return d<tab>SyntaxError: 'return' outside function (<ipython-input>, line 7)","out":"構文エラー、つまり文法的に書き方が間違っています。関数定義外で<code>return<\/code>文を使っています"}
+{"in":"df2.drop('生年月日',axis=1,inplace=True)\n<tab>KeyError: \"['生年月日'] not found in axis\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"df.read_csv('file.csv', sep=',')<tab>NameError: name 'df' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"df['平均気温'].means()<tab>AttributeError: 'Series' object has no attribute 'means'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"        'COUGHING', 'SHORTNESS OF BREATH', 'SWALLOWING DIFFICULTY', 'CHEST PAIN']]<tab>KeyError: \"['FATIGUE', 'ALLERGY'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"A,B=map(int,input().split)<tab>TypeError: 'builtin_function_or_method' object is not iterable","out":"文法的な書き間違いに原因があります。"}
+{"in":"  print(x)<tab>IndentationError: expected an indented block (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"n[1], n[9] = n[9], n[1]\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"len[a]<tab>TypeError: 'builtin_function_or_method' object is not subscriptable","out":"文法的な書き間違いに原因があります。"}
+{"in":"h,w,x,y=map(int,intput().split())<tab>NameError: name 'intput' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"c== sum(list(map(int, str(A))))\n<tab>NameError: name 'c' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。変数への代入は、<code>==<\/code>ではありません。<code>=<\/code>で行います"}
+{"in":"  print(f'x=[x] ,f([x])=[f(x,n)'])<tab>SyntaxError: invalid syntax (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"print(D)<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"    r,p=pearsor(df[col],df['住宅価格'])<tab>IndentationError: unexpected indent (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"df=df.read_csv('pollen.csv')<tab>AttributeError: 'DataFrame' object has no attribute 'read_csv'","out":"たぶんメソッド名はあっているので、レシーバを直してください。"}
+{"in":"dfD = pd.merge(dfA, dfB, dfC, on='名前', how='outer')\n<tab>TypeError: merge() got multiple values for argument 'how'","out":"同じパラメータが引数とキーワード引数で同時に与えられているので、どちらか取り除いてみましょう。"}
+{"in":"<tab>SyntaxError: invalid syntax (<unknown>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。予約語と変数の間には空白が必要です。"}
+{"in":"    if (A[i-1]) == X:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"df.shape(pollen.csv)<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"for col in df.columns:<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"model.fit(X_train, y_train)\n<tab>TypeError: fit() missing 1 required positional argument: 'y'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。（どうしてもエラーが解決しないとき）レシーバのインスタンス化が正しく行えず、クラスのままになっていることもあります。"}
+{"in":"a=n<tab>NameError: name 'n' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  print(L[i][T[k][1]])<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"random_forest.fit(X, y)<tab>NameError: name 'y' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"f BMI>25.00:<tab>IndentationError: expected an indented block (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"        Costi += math.sqrt((h[i+1] - h[i])**2)\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"X_train = train[[\"Pclass\",\"Name\" \"Sex\", \"Fare\"]]<tab>KeyError: \"['NameSex'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"plt.scatter(df['payday'], df['tempreture'])\n<tab>KeyError: 'tempreture'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"    l1 += B[ i +1] * T<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"X = df[['通勤', '教員']]   # ひとつ選ぶ\n<tab>KeyError: \"['教員'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"d=X.pop() #Xから1枚とる<tab>NameError: name 'X' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"model = SVR(max_depth=5) # 木の深さを指定\n<tab>TypeError: __init__() got an unexpected keyword argument 'max_depth'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"  if d==11 or d==22 or d==33 ord==44:<tab>SyntaxError: invalid syntax (<ipython-input>, line 7)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"  if d ==11 or d ==22 d == 33 d == 44:<tab>IndentationError: unexpected indent (<ipython-input>, line 8)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"plt.hist(df['大気汚染'],bin=12)<tab>AttributeError: 'Rectangle' object has no property 'bin'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"ｗ ＝４６.６<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"    print(\"BMI\")<tab>IndentationError: unexpected indent (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"  print(\"正の数\")　#字下げ（インデント）<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"  Y. append(calc_pi(i))<tab>NameError: name 'calc_pi' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"c.reset()<tab>AttributeError: 'Counter' object has no attribute 'reset'","out":"定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"  if BMI >=18.5 and < 25 :<tab>SyntaxError: invalid syntax (<ipython-input>, line 8)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"        if len(l[i-j][0]) == len(set(l[i-j+1][0])) and len(l[i-j][1]) == len(set(l[i+1-j][1])):\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"r2 = r2_score(y, y_pred)\n<tab>NameError: name 'y' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  return  float(s[:len(\"+\")]) + float(s[len(\"+\")+1:])<tab>IndentationError: expected an indented block (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"X_train_numa_p = pd.read_csv('my-drive\/nuna-chan\/train_Numa_print.csv')\n<tab>FileNotFoundError: [Errno 2] No such file or directory: 'my-drive\/nuna-chan\/train_Numa_print.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"model = My_rnn_net()<tab>TypeError: __init__() missing 4 required positional arguments: 'input_size', 'output_size', 'hidden_dim', and 'n_layers'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。"}
+{"in":"print(y)<tab>NameError: name 'y' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df.sample(10)<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"  print(w,\"BMI\")=x\/1.6**2<tab>SyntaxError: can't assign to function call (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。数式や関数コールへの代入はできません。<code>=<\/code>以降をざっくり消すとうまくいくかも"}
+{"in":"plt.figure(figsizee=(8,8))<tab>TypeError: __init__() got an unexpected keyword argument 'figsizee'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"X = df[df.columns[:-1]],index_datetime\n<tab>NameError: name 'index_datetime' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"elif:<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが変です。対応する<code>if<\/code>文とインデントの深さをあわせてみたら"}
+{"in":"    if cost[m][1] == cost[l][0]:\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"  if i[0]==i[1]:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"  if ss.isuppper():\n<tab>AttributeError: 'str' object has no attribute 'isuppper'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"n,k=list(map(input().split()))<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"plt.xlabel('部屋数')<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"df.plot(df['西暦'],df['降水量''])<tab>SyntaxError: EOL while scanning string literal (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。文字列を閉じ忘れています。<code>\"<\/code>と<code>'<\/code>がミスマッチな場合もあります。"}
+{"in":"    print('太りすぎ')＃インデント<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"説明変数: Index(['犯罪率', '緑地', '工場', '川近', '大気汚染', '部屋数', '築年', '通勤',<tab>NameError: name 'Index' is not defined","out":"ここはコメントアウトした方が良さそうですね。"}
+{"in":"sns.kdeplot(df.groupby('学習時間').get_group('1')['G3'], shade = True, label = 1)\n<tab>KeyError: '1'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"  i.appended('0')<tab>AttributeError: 'str' object has no attribute 'appended'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"x = np.array[1,2,2,4,6,7]\n<tab>TypeError: 'builtin_function_or_method' object is not subscriptable","out":"文法的な書き間違いに原因があります。"}
+{"in":"    i += 1<tab>IndentationError: unexpected indent (<ipython-input>, line 33)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"model = DecisionTreeRegressor(maxdepth=3)\n<tab>TypeError: __init__() got an unexpected keyword argument 'maxdepth'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"class_name.get_runtime_maps()<tab>TypeError: get_runtime_maps() takes 0 positional arguments but 1 was given","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"plt.plot(x, y)<tab>NameError: name 'plt' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"    list_SS.append(S[i])\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"X_train = train[[\"Sex\", \"perch\", \"Pclass\"]]<tab>KeyError: \"['perch'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"    N, M = lives.shape<tab>AttributeError: 'NoneType' object has no attribute 'shape'","out":"レシーバの変数名にNoneを代入してしまいました。"}
+{"in":"print('相関係数:'r)<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。カンマが必要だよ。"}
+{"in":"print('相関係数:',r)<tab>NameError: name 'r' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print(Ratio.add(Ratio2))<tab>AttributeError: 'Fraction' object has no attribute 'add'","out":"<code>&lt;A_&gt;<\/code>クラスの適切なメソッド名に変更してください"}
+{"in":"model.fit(X_train, y_train)\n<tab>NameError: name 'X_train' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df4 = df4['職業'] = Jリーガー\n<tab>NameError: name 'Jリーガー' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。文字列として<code>\"&lt;A_&gt;\"<\/code>のように囲むべきかも"}
+{"in":"cals(\"1+2+3\")<tab>NameError: name 'cals' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"  print(f'x={x}, f({x})={f(x,n)}')<tab>NameError: name 'f' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"df = pd,read_csv(\"file.csv\")<tab>NameError: name 'read_csv' is not defined","out":"文法的な書き間違いに原因があります。カンマが変だね。"}
+{"in":"X = df[['temparature']]  # ひとつ選ぶ\n<tab>KeyError: \"None of [Index(['temparature'], dtype='object')] are in the [columns]\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"plt.hist(df['低所得'])<tab>KeyError: '低所得'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"model =RandomForestRegressor()\n<tab>NameError: name 'RandomForestRegressor' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"A = max(i)<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"A,B,C=map(input())\n<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"df=pd.read_csv(\"boston.csv\")<tab>NameError: name 'pd' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"df.head(df.sorted('平均気温'))<tab>AttributeError: 'DataFrame' object has no attribute 'sorted'","out":"<code>&lt;A_&gt;<\/code>クラスの適切なメソッド名に変更してください"}
+{"in":"if S[2,3]=='f' and S[4,6]=='e':\n<tab>TypeError: string indices must be integers","out":""}
+{"in":"  ykn=(d*1.01)\n<tab>NameError: name 'd' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print(X_train,y_train)<tab>NameError: name 'X_train' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df['year'] = df['year'].astype(np.int)\n<tab>KeyError: 'year'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"print(p.bmi()<tab>SyntaxError: unexpected EOF while parsing (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"whlie d >= 10:<tab>SyntaxError: invalid syntax (<ipython-input>, line 7)","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"  if p[i]==x:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"plt.hist(df'住宅価格'),bins=20<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。キーワード引数は、key=valueの形式で指定する引数です。同じkeyを繰り返してはいけません。通常の引数の<b>あとに<\/b>続けて書きます。"}
+{"in":"ｗ　＝４６．６<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"df = pd.read_csv('bento_train.csv')\n<tab>FileNotFoundError: [Errno 2] No such file or directory: 'bento_train.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"  def __str__ = (self):<tab>SyntaxError: invalid syntax (<ipython-input>, line 13)","out":"構文エラー、つまり文法的に書き方が間違っています。うまく指摘できませんが、余分なゴミがついています。（変なコピペした？）"}
+{"in":"X = df[['緑地', '川辺']]  # 説明変数\n<tab>KeyError: \"['川辺'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"plt.figure(figsize(7,7))\n<tab>NameError: name 'figsize' is not defined","out":"文法的な書き間違いに原因があります。"}
+{"in":"kogi https:\/\/atcoder.jp\/contests\/abc192\/tasks\/abc192_a<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"ここはコメントアウトした方が良さそうですね。"}
+{"in":"N,X=map(input())\n<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"df=<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"X = df[['部屋数', '低所得率','工場','通勤','資産税','大気汚染','犯罪率','教員比',,'築年']]<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。そこにカンマは不要だね。"}
+{"in":"D = list(map(int,str(d)))<tab>IndentationError: expected an indented block (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"X = df['通勤時間']\n<tab>KeyError: '通勤時間'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"D=list(map(int, str(d)))<tab>IndentationError: expected an indented block (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"    x=4*a*b+3(a+b)<tab>TypeError: 'int' object is not callable","out":"文法的な書き間違いに原因があります。数式の書き方は数学と異なります。 Pythonでは、xyは<code>x * y<\/code>, sinxは<code>sin(x)<\/code>のように書きます。"}
+{"in":"    D=list(map(into,str(d)))<tab>NameError: name 'into' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"  print(colum)\n<tab>NameError: name 'colum' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"Ratio(1,2) \/ 2<tab>TypeError: Ratio() takes no arguments","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"    N.instert(0,0)\n<tab>AttributeError: 'int' object has no attribute 'instert'","out":"レシーバがリストになるように修正するといいんじゃないかな"}
+{"in":"X = df[df.columns[3,5,8,12]]  # 価格以外を全て説明変数に\n<tab>IndexError: too many indices for array: array is 1-dimensional, but 4 were indexed","out":""}
+{"in":"pos = s.rfind('-')<tab>NameError: name 's' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"plt\/plot(range(40,100,5),H)<tab>NameError: name 'plot' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"A, B = map(int,input(),split())<tab>NameError: name 'split' is not defined","out":"文法的な書き間違いに原因があります。カンマが変だね。"}
+{"in":"  print(animal.face(),aminal.sound())<tab>NameError: name 'aminal' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"    S.replace( S[ i ], 0 ).replace( S[ i + 1 ], S[ i ] ).replace( 0, S[ i + 1 ] )<tab>TypeError: replace() argument 2 must be str, not int","out":"関数の第&lt;B&gt;引数の型が違います。<b>文字列<\/b>になるようにしましょう。"}
+{"in":"    return float(s)<tab>IndentationError: unexpected indent (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"A,B = map(int.input().split())<tab>AttributeError: type object 'int' has no attribute 'input'","out":""}
+{"in":"model = LinearRegression()\n<tab>NameError: name 'LinearRegression' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"  print(f'{colomn} 決定係数(R2):', r2)\n<tab>NameError: name 'colomn' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"x=float(input().split())\n<tab>TypeError: float() argument must be a string or a number, not 'list'","out":"関数の引数の型が違います。<b>文字列もしくは数値<\/b>になるようにしましょう。"}
+{"in":"X_test = pd.read_csv('test.csv')<tab>FileNotFoundError: [Errno 2] No such file or directory: 'test.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"    v.append(s[k:n] + s[0:k])<tab>NameError: name 's' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print(add2(1))<tab>NameError: name 'add2' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"S.append()<tab>TypeError: append() takes exactly one argument (0 given)","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>append<\/code>はリストに要素を追加するメソッドです。追加できるのは、一度に<b>ひとつ<\/b>だけです。"}
+{"in":"elif digitSumS(A)<digitSumS(B):\n<tab>NameError: name 'digitSumS' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"    return X\n<tab>NameError: name 'X' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"n = intext(1234)<tab>NameError: name 'intext' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"  list_S.append(S[i])<tab>NameError: name 'list_S' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = []<\/code>のように空のリストを作っておこう"}
+{"in":"    ss[1]=ss[1]+[s[i]]\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"season = s.str.replace('11', '3')\n<tab>NameError: name 's' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"   if a+b+c<=S and a*b*c<=T:<tab>IndentationError: expected an indented block (<string>, line 11)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"test=pd.read_csv(\"test.csv\")<tab>FileNotFoundError: [Errno 2] No such file or directory: 'test.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"    if l[k-1][i] in l[k]:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"print(x+y)<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"A, B = map(int, input(), split())<tab>NameError: name 'split' is not defined","out":"文法的な書き間違いに原因があります。カンマが変だね。"}
+{"in":"plt.scatter(df['G3'], df['Count'])<tab>KeyError: 'Count'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"df4 = df4.drop(5, axis=0)\n<tab>KeyError: '[5] not found in axis'","out":"列方向は<code>axis=1<\/code>だよ。"}
+{"in":"model = DecisionTreeRegressor(maxdepth=3)\n<tab>TypeError: __init__() got an unexpected keyword argument 'maxdepth'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"df5=pd.read_csv('Jリーグ選手身長体重.csv')\n<tab>FileNotFoundError: [Errno 2] No such file or directory: 'Jリーグ選手身長体重.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"    l.pappend(s[ i ])<tab>KeyError: 'name'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"sum=sum(D)<tab>TypeError: 'int' object is not callable","out":"<code>sum<\/code>に値を代入したため、<code>sum<\/code>が関数として使えなくなりました。"}
+{"in":"    return str{self.counter}<tab>SyntaxError: invalid syntax (<ipython-input>, line 14)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"    if A[i-1] == X:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"import linear_model.LinearRegression()<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。import文は、<code>import モジュール名 as 別名<\/code>のように書き、モジュールをインポートします。<code>as 別名<\/code>は省略できます。特定の関数のみインポートしたい場合は、from文を使います。"}
+{"in":"  a=x[2]\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"    breakz<tab>NameError: name 'breakz' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"pd.DataFrame(pc12, columns=['pc1', 'pc2']),<tab>NameError: name 'pc12' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df.drop('平均気温',axis=1,head(5))<tab>SyntaxError: positional argument follows keyword argument (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。キーワード引数は、key=valueの形式で指定する引数です。同じkeyを繰り返してはいけません。通常の引数の<b>あとに<\/b>続けて書きます。"}
+{"in":"plt.xlabel('G3')<tab>TypeError: 'str' object is not callable","out":"関数に間違って代入してしまったため、関数が別の値に書き換えられています。ランタイムの再起動がすること回復します。"}
+{"in":" 　 print(\"低体重”）<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"df[math.perm(df['平均気温']]<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"c1.appenr(c1[0])<tab>AttributeError: 'list' object has no attribute 'appenr'","out":"レシーバがリストになるように修正するといいんじゃないかな<code>append<\/code>はリストに要素を追加するメソッドです。追加できるのは、一度に<b>ひとつ<\/b>だけです。"}
+{"in":"print(p.bmi())<tab>TypeError: 'float' object is not callable","out":"型エラーです。期待される値と異なる種類の値を使ったときに発生します。"}
+{"in":"A,B,C=map(int(),input().split())<tab>TypeError: 'int' object is not callable","out":"文法的な書き間違いに原因があります。"}
+{"in":"D=C%==0<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":""}
+{"in":"c2.counter()<tab>TypeError: 'int' object is not callable","out":"型エラーです。期待される値と異なる種類の値を使ったときに発生します。"}
+{"in":"df = pd.read_csv(\"pollen.csv\")<tab>FileNotFoundError: [Errno 2] No such file or directory: 'pollen.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"elif BMI >= 17.50 and BMI < 25.0<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。コロンが必要だよ"}
+{"in":"  if i%2 == 0 and S[i].isupper and S[i+1].islower:\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"if ans1 == \"Yes\" and ans2 == \"Yes\" and ans3 == \"Yes\" :\n<tab>NameError: name 'ans1' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"peasonr(df['部屋数'], df['住宅価格'])<tab>NameError: name 'peasonr' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"model = BaggingRegressor(base_estimator=SVR(), n_estimators=10)\n<tab>NameError: name 'SVR' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"df.groupby('天気')['y'].median()\n<tab>KeyError: 'Column not found: y'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"df.read_csv('pollen.csv', sep=',')<tab>AttributeError: 'str' object has no attribute 'read_csv'","out":"たぶんメソッド名はあっているので、レシーバを直してください。"}
+{"in":"B=str(B)\n<tab>NameError: name 'B' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df3 = df3.rename(columns={'身長_x': ' 身長'}, inplace=True)\n<tab>AttributeError: 'NoneType' object has no attribute 'rename'","out":"レシーバの変数名にNoneを代入してしまいました。"}
+{"in":"df3.drop('身長_y', axis=1, inplace=Ture)\n<tab>NameError: name 'Ture' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"print(c)<tab>NameError: name 'c' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df = pd.DataFrame({'PassengerId': test['PassengerId'], 'Survived': y_pred})<tab>NameError: name 'y_pred' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  print(a[b][c])<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"print(math.mod(N \/ 100))<tab>NameError: name 'math' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"rho = corr(df['降水量'], df['スギ花粉飛散量'])<tab>NameError: name 'corr' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"      C+=1<tab>IndentationError: expected an indented block (<string>, line 10)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"    self.a=a\/\/math.gcd(a,b)<tab>NameError: name 'math' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"p.age(p2)<tab>TypeError: age() takes 1 positional argument but 2 were given","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"sorted(df['平均気温']).ascending()<tab>AttributeError: 'list' object has no attribute 'ascending'","out":"<code>&lt;A_&gt;<\/code>クラスの適切なメソッド名に変更してください"}
+{"in":"for i in range(5)<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。コロンが必要だよ"}
+{"in":"def f(x):<tab>SyntaxError: invalid syntax (<ipython-input>, line 12)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"    def __repr__(self):<tab>IndentationError: expected an indented block (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"        b=abs(int(a[i])-int(c[j]))\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"df.sort_values('平均気温',reverse = True).head(5)<tab>TypeError: sort_values() got an unexpected keyword argument 'reverse'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"int num_reversed(int original):<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。この言語はPythonではないね。（変なコードを貼り付けないで）"}
+{"in":"  if '+' in s:<tab>TypeError: argument of type 'int' is not iterable","out":""}
+{"in":"if 1 in s and 9 in s:\n<tab>TypeError: argument of type 'int' is not iterable","out":""}
+{"in":"a=list(0)\n<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"sklearn.preprocessing.StandardScaler().fit_transform(df)<tab>NameError: name 'sklearn' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=10000, random=0, stratify=mnist.target)<tab>TypeError: train_test_split() got an unexpected keyword argument 'random'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"            sn = h[i]\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"model.fit(24,)<tab>TypeError: fit() missing 1 required positional argument: 'y'","out":""}
+{"in":"N.sort(N)\n<tab>TypeError: sort() takes no positional arguments","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。"}
+{"in":"X = df[['\t低所得率','教員比']]\n<tab>KeyError: \"['\\\\t低所得率'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"D = list(map(int, str(d)))<tab>IndentationError: expected an indented block (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"lim(x)<tab>NameError: name 'lim' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"mountains.sort(raverse=True)<tab>TypeError: 'raverse' is an invalid keyword argument for sort()","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"df.sort_values(df[\"平均気温\"])<tab>KeyError: 0     23.95\n1     24.35\n2     22.35\n3     27.10\n4     24.55\n5     24.30\n6     24.40\n7     24.25\n8     25.10\n9     25.35\n10    25.25\n11    25.60\n12    22.90\n13    25.05\n14    24.05\n15    24.70\n16    24.25\n17    24.80\nName: 平均気温, dtype: float64","out":"型エラーです。期待される値と異なる種類の値を使ったときに発生します。文字列でないカラム名が与えられました。"}
+{"in":"if d=1:<tab>SyntaxError: invalid syntax (<ipython-input>, line 11)","out":"構文エラー、つまり文法的に書き方が間違っています。条件では<code>=<\/code>の代わりに、<code>==<\/code>を使います。（ちゃんと区別してね）"}
+{"in":"  rho=corr(df[column],df[\"住宅価格\"])<tab>NameError: name 'corr' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"df3=df3.drop('身長_y', axis=1, inplace=True)\n<tab>KeyError: \"['身長_y'] not found in axis\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"plt.scatter(df['自然'], df['住宅価格'], alpha=0.5)<tab>KeyError: '自然'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"df.[\"住宅価格\"].describe()<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"X = df['通勤', '教員']  # 説明変数\n<tab>KeyError: ('通勤', '教員')","out":"書き方がどこかしら変です。よくお手本を見てください。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"intext.__len__()<tab>TypeError: __len__() missing 1 required positional argument: 'self'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。（どうしてもエラーが解決しないとき）レシーバのインスタンス化が正しく行えず、クラスのままになっていることもあります。"}
+{"in":"  X=df[[column]]\n<tab>NameError: name 'column' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  a=int(A[e])<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"  print(L[i][b[k][1]])<tab>NameError: name 'b' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"plt.scatter(df['部屋数'], df['住宅価格'], alpha=0.3)\n<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"'9' in 99\n<tab>TypeError: argument of type 'int' is not iterable","out":""}
+{"in":"print(4*a)<tab>SyntaxError: invalid syntax (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"if N==len[3]:\n<tab>TypeError: 'builtin_function_or_method' object is not subscriptable","out":"文法的な書き間違いに原因があります。"}
+{"in":"order_by = ['なし', ,'GP高', 'MS高',]<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。そこにカンマは不要だね。"}
+{"in":"  X = df[[colomn]]\n<tab>NameError: name 'colomn' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"plt.figure(figsize=(7.7))<tab>TypeError: from_bounds() argument after * must be an iterable, not float","out":"文法的な書き間違いに原因があります。カンマが変だね。"}
+{"in":"    break<tab>SyntaxError: 'break' outside loop (<ipython-input>, line 8)","out":"構文エラー、つまり文法的に書き方が間違っています。ループの外では<code>break<\/code>文は使えません"}
+{"in":"  S[i]=input()<tab>IndexError: list assignment index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"$$<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。この言語はPythonではないね。（変なコードを貼り付けないで）"}
+{"in":"  for column in df.columns[i]:\n<tab>NameError: name 'i' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df6.drop('生年月日','ポジション','背番号','投', axis=1, inplace=True)\n<tab>TypeError: drop() got multiple values for argument 'axis'","out":"同じパラメータが引数とキーワード引数で同時に与えられているので、どちらか取り除いてみましょう。"}
+{"in":"lives=init(8,5)<tab>NameError: name 'init' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"sns.scatterplot(data=df, x='pc1', y='pc2', hue='label')<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"df[\"uid\",\"keys\"].head()\n<tab>KeyError: ('uid', 'keys')","out":"書き方がどこかしら変です。よくお手本を見てください。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"  if i[0]==i[1]:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"df = pd.DataFrame({'PassengerId','sex': test['PassengerId','sex'], 'Survived': y_pred})<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"X_train = torch.tensor(X_train.values, dtype=torch.float32)\n<tab>NameError: name 'X_train' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"S = list(map(str,input().zplit()))<tab>AttributeError: 'str' object has no attribute 'zplit'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"  if x=0:<tab>SyntaxError: invalid syntax (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。条件では<code>=<\/code>の代わりに、<code>==<\/code>を使います。（ちゃんと区別してね）"}
+{"in":"    elif y == 2:<tab>SyntaxError: unexpected EOF while parsing (<ipython-input>, line 14)","out":"構文エラー、つまり文法的に書き方が間違っています。Pythonでは、何もしない空文は<code>pass<\/code>と書きます。よろしく。"}
+{"in":"    print(Yes)<tab>NameError: name 'Yes' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。文字列として<code>\"&lt;A_&gt;\"<\/code>のように囲むべきかも"}
+{"in":"print(math.sqrt.x^2-n)<tab>AttributeError: 'builtin_function_or_method' object has no attribute 'x'","out":""}
+{"in":"    while d >=10: #二桁の時は繰り返す<tab>IndentationError: unexpected indent (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"df.drop(\"黒人\", axis=1, inplace = True)<tab>KeyError: \"['黒人'] not found in axis\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"df.read_csv('pollen.csv',header=5)<tab>NameError: name 'df' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"x = N % 16<tab>TypeError: not all arguments converted during string formatting","out":"文字列のモジュロ（余り）を計算しようとしています。数値に変換してから計算してね。"}
+{"in":"print(sum(N))<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"p = PersonW(name=\"a\", height=177, weight=55)<tab>TypeError: __init__() got an unexpected keyword argument 'name'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"a, b, c, d=map(int.int().split())<tab>AttributeError: type object 'int' has no attribute 'int'","out":""}
+{"in":"sns.kdeplot(df.groupby('性別').get_group('男性')['G3'], shade = True, label = '男子学生')<tab>KeyError: '男性'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"y_train_pred= mode_L.predict(X)\n<tab>NameError: name 'mode_L' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"X = vectorizer.fit_transform(df['わかち書き'])\n<tab>KeyError: 'わかち書き'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"model = PolynomialFeatures(max_depth=4)\n<tab>NameError: name 'PolynomialFeatures' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"numpy.sqrt(array)<tab>NameError: name 'array' is not defined","out":""}
+{"in":"plt.figure(figsize=15, 15)<tab>SyntaxError: positional argument follows keyword argument (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。キーワード引数は、key=valueの形式で指定する引数です。同じkeyを繰り返してはいけません。通常の引数の<b>あとに<\/b>続けて書きます。"}
+{"in":"plt.scatter(y, x_pred, c='red', alpha=0.3)\n<tab>NameError: name 'x_pred' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"if n[i]=='1':\n<tab>NameError: name 'i' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"X = df['資産税','教員比']\n<tab>KeyError: ('資産税', '教員比')","out":"書き方がどこかしら変です。よくお手本を見てください。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"p.bmi()<tab>TypeError: 'float' object is not callable","out":"型エラーです。期待される値と異なる種類の値を使ったときに発生します。"}
+{"in":"for colum in df.colums[:-1]:\n<tab>AttributeError: 'DataFrame' object has no attribute 'colums'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"if y[x-1]==o:\n<tab>NameError: name 'o' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"sum(n)<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"print(C)<tab>NameError: name 'C' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"sum[animal.leg() for animal in animals]<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"alldata['TicketFrec'].head()<tab>KeyError: 'TicketFrec'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"  def <tab>SyntaxError: invalid syntax (<ipython-input>, line 21)","out":"まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"plt.plot(range(len(predict_list)), predict_list , label='Predicted')<tab>NameError: name 'predict_list' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"if lens(K)>lens(S):\n<tab>NameError: name 'lens' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"if s.ispper():\n<tab>AttributeError: 'str' object has no attribute 'ispper'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"A = InfiniteZero()<tab>NameError: name 'InfiniteZero' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。はクラスかも知れません。クラス定義も確認してください。"}
+{"in":"plt.hist(y-y_pred, bins=50)\n<tab>NameError: name 'y_pred' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"a = x**y<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print(\"体重：\"w, \"身長：\"h)<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。カンマが必要だよ。"}
+{"in":"  A=1\/2(2*1+(i-1)*1)\n<tab>TypeError: 'int' object is not callable","out":"文法的な書き間違いに原因があります。数式の書き方は数学と異なります。 Pythonでは、xyは<code>x * y<\/code>, sinxは<code>sin(x)<\/code>のように書きます。"}
+{"in":"if S  in X:\n<tab>TypeError: argument of type 'int' is not iterable","out":""}
+{"in":"  print(S[str(n)]+'...')\n<tab>TypeError: string indices must be integers","out":""}
+{"in":"D=list(map(int,str(d)))<tab>IndentationError: expected an indented block (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"r = Ratio(1, 2)<tab>NameError: name 'Ratio' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。はクラスかも知れません。クラス定義も確認してください。"}
+{"in":"print(len(ABCDE.set()))<tab>AttributeError: 'list' object has no attribute 'set'","out":"<code>&lt;A_&gt;<\/code>クラスの適切なメソッド名に変更してください"}
+{"in":"＃＃<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"plt.show()[0m<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。うまく指摘できませんが、余分なゴミがついています。（変なコピペした？）"}
+{"in":"pollen.head<tab>NameError: name 'pollen' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"D = list(map(int, str(d)))<tab>IndentationError: expected an indented block (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"plot.show()<tab>NameError: name 'plot' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"  else:<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが変です。対応する<code>if<\/code>文とインデントの深さをあわせてみたら"}
+{"in":"sns.heatmap(cm, annot=True, cmap='Reds')<tab>NameError: name 'cm' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"corr = pearsonr(df[工場], df[住宅価格])\n<tab>NameError: name 'pearsonr' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"S.sort()<tab>AttributeError: 'str' object has no attribute 'sort'","out":"<code>&lt;A_&gt;<\/code>クラスの適切なメソッド名に変更してください文字列はイミュータブル、つまり変更不能です。文字列を変更するメソッドは存在しません。"}
+{"in":"print(p.bmi())<tab>TypeError: 'float' object is not callable","out":"型エラーです。期待される値と異なる種類の値を使ったときに発生します。"}
+{"in":"N=NN % 10\n<tab>NameError: name 'NN' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"n - int(input())\n<tab>NameError: name 'n' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    if flag % 2 == 0:<tab>NameError: name 'flag' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"        else:<tab>SyntaxError: 'break' outside loop (<ipython-input>, line 12)","out":"構文エラー、つまり文法的に書き方が間違っています。ループの外では<code>break<\/code>文は使えません"}
+{"in":"    r, p = pearsonr(df[col], df['住宅価格'])<tab>IndentationError: unexpected indent (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"train = pd.read_csv(\"train.csv\")<tab>NameError: name 'pd' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"df7.drop('チーム', axis=1, inplace=True)\n<tab>KeyError: \"['チーム'] not found in axis\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"print(round(S,3)<tab>SyntaxError: unexpected EOF while parsing (<string>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"print(H.index(a))<tab>AttributeError: 'map' object has no attribute 'index'","out":"レシーバが文字列かリストになるように修正するといいんじゃないかな"}
+{"in":"    if 18.5 ≦ x < 25<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"N=;ist(map(int,input().split()))<tab>SyntaxError: invalid syntax (<string>, line 2)","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"df.drop(\"黒人\" , axis=1, inplace = True)<tab>KeyError: \"['黒人'] not found in axis\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"read_csv('pollen.csv')<tab>NameError: name 'read_csv' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"df = read_csv('pollen.csv')<tab>NameError: name 'read_csv' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"ｗ ＝４６.６<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"print (Ratio(2\/4))<tab>TypeError: __init__() missing 1 required positional argument: 'bottom'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"a.insert(4)<tab>TypeError: insert() takes exactly 2 arguments (1 given)","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。"}
+{"in":"    i.appned(a)<tab>AttributeError: 'list' object has no attribute 'appned'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"plt.scatter(df['temperature'], df['ｙ'])\n<tab>KeyError: 'ｙ'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"if a[3]==a[4] and a[5]==a[6]:\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"model = NeuralNetwork()<tab>NameError: name 'NeuralNetwork' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"if ans_1 and ans_2 and ans_3 :\n<tab>NameError: name 'ans_1' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df.drop('datetime', axis=1, inplace=True)\n<tab>KeyError: \"['datetime'] not found in axis\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"plt.figure(figsize(8,8))<tab>NameError: name 'figsize' is not defined","out":"文法的な書き間違いに原因があります。"}
+{"in":"        p2_birthday = datetime.date(p2.year, p2.month, p.2day)<tab>SyntaxError: invalid syntax (<ipython-input>, line 23)","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"  if A[i] == X:\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"else if A==C:<tab>SyntaxError: invalid syntax (<string>, line 7)","out":"構文エラー、つまり文法的に書き方が間違っています。コロンが必要だよ"}
+{"in":"　<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 17)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"    d = (N-1-i)*A[i] - (sum(A[i+1:]))<tab>TypeError: 'int' object is not callable","out":"<code>sum<\/code>に値を代入したため、<code>sum<\/code>が関数として使えなくなりました。"}
+{"in":"c=[map(int,input().split() for _ in range(n)]<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"！head boston.csv<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"X = df_2[['weather_num','temperature','datetime_num']]  # 説明変数\n<tab>KeyError: \"['datetime_num'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"S = str(intput())<tab>NameError: name 'intput' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)\n<tab>NameError: name 'X' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"math.sin(x)<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"rho, p = pearsonr(df['部屋数'], df['住宅価格'])<tab>KeyError: '部屋数'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"b=[([1] for i in range(2))] for j in range(3)<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"    if xa%200!=0:\n<tab>NameError: name 'xa' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  if i[0]==i[1] or i[0]==i[2] or i[1]==i[2]:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"dog.sound()<tab>TypeError: sound() takes 0 positional arguments but 1 was given","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"for column in df.column[:-1]:\n<tab>AttributeError: 'DataFrame' object has no attribute 'column'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"  X = df[[coloumn]]  # 説明変数\n<tab>NameError: name 'coloumn' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"    if 4*a*b+3*(a+b)==s:<tab>IndentationError: unexpected indent (<ipython-input>, line 8)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"D = A  B<tab>SyntaxError: invalid syntax (<string>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"X_train_numa_p = pd.read_csv('https:\/\/drive.google.com\/file\/d\/1yWj9QG29CmUOufrvE2NITNBxwRlRtD7g\/view?usp=sharing'\/MyDrive\/train_Numa_print.csv)\n<tab>NameError: name 'MyDrive' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"      print (S[j])<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"bmi = PersonW()<tab>TypeError: __init__() missing 2 required positional arguments: 'height' and 'weight'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"A,B = map(input().split())<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"  if i[0]==i[1]:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"elif x[1]==0:\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"    N.instert(0,0)\n<tab>AttributeError: 'str' object has no attribute 'instert'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"  A = map(int,input).split())<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"N=ansgd\n<tab>NameError: name 'ansgd' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"f(x) = x + 1<tab>SyntaxError: can't assign to function call (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。数式や関数コールへの代入はできません。<code>=<\/code>以降をざっくり消すとうまくいくかも"}
+{"in":"df_menu = pd.get_dummies(df['menu'], dummy_na=False, columns=['menu'])\n<tab>KeyError: 'menu'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"N = int(input().split)<tab>TypeError: int() argument must be a string, a bytes-like object or a number, not 'builtin_function_or_method'","out":"関数の引数の型が違います。<b>文字列、バイト列もしくは数値<\/b>になるようにしましょう。"}
+{"in":"sum=n(n+1)\/2\n<tab>TypeError: 'int' object is not callable","out":"文法的な書き間違いに原因があります。数式の書き方は数学と異なります。 Pythonでは、xyは<code>x * y<\/code>, sinxは<code>sin(x)<\/code>のように書きます。"}
+{"in":"df = df[['y','payday','precipitation','name','datetime','kcal','week','soldout','remarks','event','weather','temperature','season']]\n<tab>KeyError: \"['season'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"g1=n.sort()<tab>AttributeError: 'int' object has no attribute 'sort'","out":"レシーバがリストになるように修正するといいんじゃないかな"}
+{"in":"    (int(X[i])+1)%10==int(X[i+1])%10<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"C=[0]*N<tab>SyntaxError: invalid syntax (<string>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"  r=corr(df[col],df['G3'])<tab>NameError: name 'corr' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"  X = df[[columns]]\n<tab>NameError: name 'columns' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  print(pon)\n<tab>NameError: name 'pon' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"X = df[['weather', 'tempersture']]\n<tab>KeyError: \"['tempersture'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"  if name in d:<tab>NameError: name 'd' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    print(Yes)\n<tab>NameError: name 'Yes' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。文字列として<code>\"&lt;A_&gt;\"<\/code>のように囲むべきかも"}
+{"in":"w＝45.2<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"s = [input()) for _ in range(10)]<tab>SyntaxError: invalid syntax (<string>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"mean_list_all = make_mean_list(sample_list, df_keys['keys'])\n<tab>NameError: name 'SS' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"ｗ ＝４６．６<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"ｖ<tab>NameError: name 'v' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"(x-1)*(x+2)-12*15=0<tab>SyntaxError: can't assign to operator (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。数式や関数コールへの代入はできません。<code>=<\/code>以降をざっくり消すとうまくいくかも"}
+{"in":"for i in range(2,N)<tab>SyntaxError: invalid syntax (<string>, line 9)","out":"構文エラー、つまり文法的に書き方が間違っています。コロンが必要だよ"}
+{"in":"    a -= 1\/(4*(num+1)-1)<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=10000, random_state=0,<tab>NameError: name 'X' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df = pd.concat([df2, df1])<tab>NameError: name 'df2' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"D=list(map(int,str(d))<tab>IndentationError: expected an indented block (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"for a in range():\n<tab>TypeError: range expected 1 arguments, got 0","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。"}
+{"in":"intext.__getitem__(n[1])<tab>TypeError: __getitem__() missing 1 required positional argument: 'index'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。（どうしてもエラーが解決しないとき）レシーバのインスタンス化が正しく行えず、クラスのままになっていることもあります。"}
+{"in":"X = df[['Pclass', 'Age', 'Sex', 'Fare']].values<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"  if S[a]==o:\n<tab>NameError: name 'o' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    return self.mul(x)<tab>AttributeError: 'Ratio' object has no attribute 'mul'","out":"<code>&lt;A_&gt;<\/code>クラスの適切なメソッド名に変更してください"}
+{"in":"x=list(int(input()))\n<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"df7.drop('ポジション','生年月日',axis=1, inplace=True)\n<tab>TypeError: drop() got multiple values for argument 'axis'","out":"同じパラメータが引数とキーワード引数で同時に与えられているので、どちらか取り除いてみましょう。"}
+{"in":"print(a+1)<tab>NameError: name 'a' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"model = SVR(max_depth=3)\n<tab>TypeError: __init__() got an unexpected keyword argument 'max_depth'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"BMI=w(h:h)<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。コロンが変だね。"}
+{"in":"        'COUGHING', 'SHORTNESS OF BREATH', 'SWALLOWING DIFFICULTY', 'CHEST PAIN', 'LUNG_CANCER ']]<tab>KeyError: \"['YELLO_FINGERS', 'FATIGUE', 'ALLERGY', 'LUNG_CANCER '] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"  Y.append(f(x))<tab>NameError: name 'f' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"class 🐤<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 39)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"    if battle( A[ n1 ][ j ], A[ n2 ][ j ] ) :<tab>NameError: name 'n2' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"array([19.94203311])\n<tab>NameError: name 'array' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。ここはコメントアウトした方が良さそうですね。"}
+{"in":"df.drop('ポジション','背番号','生年月日',axis=1,inplsce=True)\n<tab>TypeError: drop() got multiple values for argument 'axis'","out":"同じパラメータが引数とキーワード引数で同時に与えられているので、どちらか取り除いてみましょう。"}
+{"in":"while n = (Y - X) \/ 10:<tab>SyntaxError: invalid syntax (<string>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。条件では<code>=<\/code>の代わりに、<code>==<\/code>を使います。（ちゃんと区別してね）"}
+{"in":"  str_x_list.sorted()\n<tab>AttributeError: 'list' object has no attribute 'sorted'","out":"メソッドではなく、代わりに<b>組み込み関数<\/b>を使います。リストAのソートは、メソッドとしてA.sort()、関数としてsorted(A)と書きます。それぞれ、動作が異なります。"}
+{"in":"df_all = pd.merge(df_name,df,on='name')\n<tab>KeyError: 'name'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"df['平均気温'].head(max(5))<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"    print(wight)<tab>NameError: name 'wight' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"model = RandomForestRegressor(max_depth=3)\n<tab>NameError: name 'RandomForestRegressor' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"X = mnist.data.reshape(70000, 784) \/ 255  # [0,1]で正規化<tab>NameError: name 'mnist' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"x=((-Sx(Sy-Gy)\/(Sx+Gx))\/((Sy-Gy)\/(-Sx-Gx)))\n<tab>TypeError: 'int' object is not callable","out":"文法的な書き間違いに原因があります。数式の書き方は数学と異なります。 Pythonでは、xyは<code>x * y<\/code>, sinxは<code>sin(x)<\/code>のように書きます。"}
+{"in":"[animal.leg() for animail in anials]<tab>NameError: name 'anials' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"df[df['平均気温']]<tab>KeyError: '平均気温'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"print(mysqrt(2.0))<tab>NameError: name 'mysqrt' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"train_loader = Data+oader(train, model.batch_size, shuffle = True)\n<tab>NameError: name 'Data' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"  c1 = [n-1,abs(h[n]-h[n-1])]\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"    print(f'N=[i]',calc_pi(i))<tab>NameError: name 'calc_pi' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"h = 1.6<tab>IndentationError: expected an indented block (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"P=list(map(input().split()))\n<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"x = list(map(int(input().split())))\n<tab>TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'","out":"関数の引数の型が違います。<b>文字列、バイト列もしくは数値<\/b>になるようにしましょう。"}
+{"in":"plt.plot(weights,newdata)<tab>NameError: name 'plt' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"if BMI < 17.5<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。コロンが必要だよ"}
+{"in":"  print(animal.face(),aniaml.sound())<tab>NameError: name 'aniaml' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"X = df['soldout','kcal','payday','temperature']  \n<tab>KeyError: ('soldout', 'kcal', 'payday', 'temperature')","out":"書き方がどこかしら変です。よくお手本を見てください。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"if ans1 and ans2 and ans3 :\n<tab>NameError: name 'ans1' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"x==-1\n<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"y_pred = model.predict(X_test)\n<tab>AttributeError: 'PolynomialFeatures' object has no attribute 'predict'","out":"レシーバが機械学習モデルになるように修正するといいんじゃないかな"}
+{"in":"A,B=map()(int,input().split)<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"print(1999999999999999999999999999999999999999999+299999999999999999999999999999999999999999999999999999あ)<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"if BMI > 25.00　：<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"    s+=y*h<tab>NameError: name 's' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。変数を増減するときは、最初に <code>&lt;A_&gt; = 0<\/code>のように初期化しておく必要があります。"}
+{"in":"cm = confusion_matrix(y_test, y_predict)\n<tab>NameError: name 'confusion_matrix' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"df.drop('黒人', axis = 1, inplace = True<tab>SyntaxError: unexpected EOF while parsing (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"A,B=map(int,input().sprit())<tab>AttributeError: 'str' object has no attribute 'sprit'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"print(max(A))<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"lives[x,y]<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"plt.figure(figsize(=8,8))<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"pearsonr(df['降水量'], df['スギ花粉飛散量'])<tab>NameError: name 'pearsonr' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"    plt.legend([str(df[column].describe())]])<tab>SyntaxError: invalid syntax (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"A,B = map(int,input(),split)<tab>NameError: name 'split' is not defined","out":"文法的な書き間違いに原因があります。カンマが変だね。"}
+{"in":"X = df[['kal','soldout']]\n<tab>KeyError: \"['kal'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"print(set(youso).split(\".\"))<tab>AttributeError: 'set' object has no attribute 'split'","out":"レシーバが文字列になるように修正するといいんじゃないかな"}
+{"in":"\"平均身長\", math.sqrt(h) *100 \"cm\"<tab>SyntaxError: invalid syntax (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。現在のPythonでは、<code>print<\/code>は関数です。<code>print(X, Y)<\/code>のように出力する内容を括弧で囲みます。Pythonの書き方を調べるときは、Python3.0以降の書き方を参考にしましょう。"}
+{"in":"x = fc1('x')\n<tab>TypeError: linear(): argument 'input' (position 1) must be Tensor, not str","out":"の引数の型が間違っていて、内部でエラーになっています。"}
+{"in":"(\/if, BMI, >=)<tab>SyntaxError: invalid syntax (<ipython-input>, line 6)","out":"ここはコメントアウトした方が良さそうですね。"}
+{"in":"    if l[2*i-1]>l[2*i]:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"for i in X:\n<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"X_train = train[['Sex', 'Age','Fare','Sibsp','Embarked']]<tab>KeyError: \"['Sibsp'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"def procedure bubbleSort( A : list of sortable items ) defined as:<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。この言語はPythonではないね。（変なコードを貼り付けないで）"}
+{"in":"model = Pipeline()\n<tab>TypeError: __init__() missing 1 required positional argument: 'steps'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。"}
+{"in":"a = Cat('neko')<tab>NameError: name 'Cat' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。はクラスかも知れません。クラス定義も確認してください。"}
+{"in":"for s in S:\n<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"    X = df[[column,column[i]]]  # ひとつ選ぶ\n<tab>KeyError: \"None of [Index(['犯', '犯'], dtype='object')] are in the [columns]\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"http:\/\/www.mikiotaniguchi.com\/image\/08\/08041003s.pdf<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"ここはコメントアウトした方が良さそうですね。"}
+{"in":"animals = [Chikin(), Sheep(), Dog()]<tab>TypeError: __init__() missing 1 required positional argument: 'name'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"a,b=map(input().split())\n<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"dataset = TensorDataset(X, y)\n<tab>NameError: name 'TensorDataset' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"    if (S[2*i-1].isupper() or S[2*i].islower()) and 2*i-1<=len(S):\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)\n<tab>NameError: name 'X' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print(a[0][b[0][1]+1])<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"  S.replac\n<tab>AttributeError: 'list' object has no attribute 'replac'","out":"まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"df['住宅価格'].describe()<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"plt.hist(X)<tab>NameError: name 'X' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  if v[i-1]<v[i] and v[i+1]<v[i]:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"N , K = map(int.input().split())<tab>AttributeError: type object 'int' has no attribute 'input'","out":""}
+{"in":"    print(’ふとりすぎ')<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"a.remove(k)<tab>NameError: name 'k' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  print(\"肥満\")<tab>IndentationError: expected an indented block (<ipython-input>, line 9)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"x = fc1(x)\n<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  if i%2 != 0 and S[i].islower and S[i+1].isupper:\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"df = pd.read_csv('student-mat.csv')<tab>FileNotFoundError: [Errno 2] No such file or directory: 'student-mat.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"ihead boston.csv<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。シェルコマンドを実行するときは、先頭に!をつけます"}
+{"in":"  SS.append(S[m])\n<tab>NameError: name 'm' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"ｗ　＝４６．６<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"print( w \/ h**)<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"  break<tab>SyntaxError: 'break' outside loop (<string>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。ループの外では<code>break<\/code>文は使えません"}
+{"in":"A , B = map(int,input.sprit())<tab>AttributeError: 'function' object has no attribute 'sprit'","out":""}
+{"in":"df = read_csv('pollen.csv', sep=',')<tab>NameError: name 'read_csv' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"<tab>IndentationError: expected an indented block (<unknown>, line 9)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"X_train = X_train_all[sample_list]\n<tab>KeyError: 'None of [Index([         (\\'\"\\', \\'\"\\'),          (\\'\"\\', \\'u\\'),          (\\'\"\\', \\'2\\'),\\n                (\\'\"\\', \\'b\\'),          (\\'\"\\', \\'x\\'),  (\\'\"\\', \\'ArrowLeft\\'),\\n                (\\'\"\\', \\'\/\\'),          (\\'\"\\', \\'>\\'),          (\\'\"\\', \\'c\\'),\\n                (\\'\"\\', \\'o\\'),\\n       ...\\n            (\\'t\\', \\'Shift\\'),          (\\'t\\', \\'=\\'), (\\'t\\', \\'ArrowRight\\'),\\n                (\\'t\\', \\'d\\'),          (\\'t\\', \\'[\\'),          (\\'t\\', \\'0\\'),\\n                (\\'t\\', \\'m\\'),          (\\'t\\', \\',\\'),          (\\'t\\', \\'g\\'),\\n                (\\'t\\', \\'t\\')],\\n      dtype=\\'object\\', length=1600)] are in the [columns]'","out":"指定されたカラム名がデータフレームにありません。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"plt.scatter(x,y)<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"return d<tab>SyntaxError: 'return' outside function (<ipython-input>, line 10)","out":"構文エラー、つまり文法的に書き方が間違っています。関数定義外で<code>return<\/code>文を使っています"}
+{"in":"p=PersonW('hanako',150,45)<tab>NameError: name 'PersonW' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。はクラスかも知れません。クラス定義も確認してください。"}
+{"in":"df.colum<tab>AttributeError: 'DataFrame' object has no attribute 'colum'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"  C[i]=input()<tab>NameError: name 'C' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print(data)<tab>NameError: name 'data' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    df.columns=columns<tab>IndentationError: unexpected indent (<ipython-input>, line 8)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"x = np.array[1,2,2,4,6,7]\n<tab>TypeError: 'builtin_function_or_method' object is not subscriptable","out":"文法的な書き間違いに原因があります。"}
+{"in":"X = df[['soldout','kcal','payday','temperature', 'weather_num','week_num', 'precipitation_num','event_num','remarks_num','name_num']]\n<tab>KeyError: \"['weather_num', 'week_num', 'precipitation_num', 'event_num'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"if BMI > 25.00<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。コロンが必要だよ"}
+{"in":"    return self.weight:<tab>SyntaxError: invalid syntax (<ipython-input>, line 13)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"print(A)<tab>SyntaxError: invalid syntax (<string>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"for i in sns.kdeplot(df.groupby('母学歴').get_group(n)['G3'], shade = True, label = 'n'):<tab>SyntaxError: unexpected EOF while parsing (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。Pythonでは、何もしない空文は<code>pass<\/code>と書きます。よろしく。"}
+{"in":"df['性別'].value_count()<tab>AttributeError: 'Series' object has no attribute 'value_count'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"print(AB)<tab>NameError: name 'AB' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。数式の書き方は数学と異なります。 Pythonでは、xyは<code>x * y<\/code>, sinxは<code>sin(x)<\/code>のように書きます。"}
+{"in":"X = df[['部屋数', '築年']]<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"  if S[i]==1:\n<tab>TypeError: string indices must be integers","out":""}
+{"in":"  a *= n-i<tab>NameError: name 'a' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"pd.get_dummies(train).corrwith(train[\"survived\"])<tab>KeyError: 'survived'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"df = pd_read.csv('pollen.csv')<tab>NameError: name 'pd_read' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"model = DecisionTreeRegressor(maxdepth=3)\n<tab>TypeError: __init__() got an unexpected keyword argument 'maxdepth'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"a,b=map(input().split())\n<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"  A[i], B[i] = map(int, input().split())\n<tab>IndexError: list assignment index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"if d=3:<tab>SyntaxError: invalid syntax (<ipython-input>, line 13)","out":"構文エラー、つまり文法的に書き方が間違っています。条件では<code>=<\/code>の代わりに、<code>==<\/code>を使います。（ちゃんと区別してね）"}
+{"in":"x = fc1()\n<tab>TypeError: forward() missing 1 required positional argument: 'input'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。"}
+{"in":"    else :<tab>SyntaxError: invalid syntax (<ipython-input>, line 17)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。"}
+{"in":"M=8　　　#列数<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"print(f'正解率(訓練)', model.score(x_pred, y_pred))<tab>NameError: name 'model' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df.sort_values('pollen.csv').head(5)<tab>KeyError: 'pollen.csv'","out":""}
+{"in":"  ans += chr(ord('A')+(ord(letter)-ord('A')+n)%26)\n<tab>NameError: name 'n' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"model = sklearn.linear_model.LinearRegression()<tab>NameError: name 'sklearn' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"str1 = S\n<tab>NameError: name 'S' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"plt.hist(df[\"文字数\"])\n<tab>KeyError: '文字数'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"df3.rename(columns={'身長_x': ' 身長'}, inplace=True)\n<tab>AttributeError: 'NoneType' object has no attribute 'rename'","out":"レシーバの変数名にNoneを代入してしまいました。"}
+{"in":"for w in range(40, 100. 5):<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"        L += a<tab>NameError: name 'L' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。変数を増減するときは、最初に <code>&lt;A_&gt; = 0<\/code>のように初期化しておく必要があります。"}
+{"in":"d = c.split()<tab>AttributeError: 'list' object has no attribute 'split'","out":"レシーバが文字列になるように修正するといいんじゃないかな"}
+{"in":"  Y.append(calc_pi(i))<tab>NameError: name 'calc_pi' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"sns.jointplot(x=\"犯罪率\",y=\"住宅価格\",data=df)\n<tab>NameError: name 'sns' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"こぎーくん<tab>NameError: name 'こぎーくん' is not defined","out":"ここはコメントアウトした方が良さそうですね。"}
+{"in":"print(max(A+B),(B+C),(A+C))<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"c=S[3]\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"X = train[[\"likes\",\"dislike\", \"comment_count\"]]<tab>KeyError: \"['dislike'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"$$<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。うまく指摘できませんが、余分なゴミがついています。（変なコピペした？）"}
+{"in":"df = pd.read_csv('pollen.csv')<tab>FileNotFoundError: [Errno 2] No such file or directory: 'pollen.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"  a[A-1].appned(B)<tab>AttributeError: 'list' object has no attribute 'appned'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"df = pd.read_csv('bento_train.csv')\n<tab>FileNotFoundError: [Errno 2] No such file or directory: 'bento_train.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"b= n[1] + n[2] + n[0]\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"A.replace(X,\" \")\n<tab>AttributeError: 'list' object has no attribute 'replace'","out":"レシーバがリストになるように修正するといいんじゃないかな"}
+{"in":"c = collections.Counter(h)<tab>NameError: name 'collections' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"print([3 3 3].remove(3))<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。カンマが必要だよ。"}
+{"in":"print(n['1'],n['9'])\n<tab>TypeError: list indices must be integers or slices, not str","out":""}
+{"in":"　　D = list(map(int,str(d)))<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"X = df[['部屋数', '教育比', '資産税']]\n<tab>KeyError: \"['教育比'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"h = math,sqrt( w \/ 22.0)<tab>NameError: name 'sqrt' is not defined","out":"文法的な書き間違いに原因があります。カンマが変だね。"}
+{"in":"pd.pivot_table(df, index=\"血液型\", colums='身長')\n<tab>TypeError: pivot_table() got an unexpected keyword argument 'colums'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"model = LinearRegression(x)\n<tab>TypeError: __init__() takes 1 positional argument but 2 were given","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。"}
+{"in":"data[1,2,3,4,5,7] #データ列(リスト)<tab>NameError: name 'data' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"model = DecisionTreeRegressor(maxdepth = 3)\n<tab>TypeError: __init__() got an unexpected keyword argument 'maxdepth'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"print( Fraction(str(n))<tab>SyntaxError: unexpected EOF while parsing (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"x==\"a\"*b\n<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"plt.figure(figsize(8.8))<tab>NameError: name 'figsize' is not defined","out":"文法的な書き間違いに原因があります。"}
+{"in":"a,b,h,m=map(float(),input().split())\n<tab>TypeError: 'float' object is not callable","out":"文法的な書き間違いに原因があります。"}
+{"in":"　D=list(map(int,str(d)))<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"  if d==11 or d==22 or d==33 ord==44<tab>SyntaxError: invalid syntax (<ipython-input>, line 7)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"    a, b = return map(float, s.split('+'))<tab>SyntaxError: invalid syntax (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。"}
+{"in":"50 <= A <=B<tab>NameError: name 'A' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"BMI = w \/ h**<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"  if f(x) == 10:<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    c+=1\n<tab>NameError: name 'c' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。変数を増減するときは、最初に <code>&lt;A_&gt; = 0<\/code>のように初期化しておく必要があります。"}
+{"in":"print((a * 24) +b)<tab>NameError: name 'a' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"for i, x in enumerate(InfiniteZero(A)):<tab>TypeError: InfiniteZero() takes no arguments","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"  if int(S[j]) == 1:\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"def(x):<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"    rho = corr(df[column,column], df['住宅価格'])\n<tab>KeyError: ('犯罪率', '犯罪率')","out":"書き方がどこかしら変です。よくお手本を見てください。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"  for column2 in df.column[:-1]:\n<tab>AttributeError: 'DataFrame' object has no attribute 'column'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"X = df[['通勤', '教員']]  # 一つ選ぶ\n<tab>KeyError: \"['教員'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"y = df[\"y\"]<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"for x in data:<tab>NameError: name 'data' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print(\"Takahashi\")<tab>SyntaxError: invalid syntax (<string>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"x = list(map(str(input())))\n<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"b=<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"df = read_csv('bento_train.csv')\n<tab>NameError: name 'read_csv' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"print(D)<tab>IndentationError: expected an indented block (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"    similarity = cosine_similarity(vec[index:index+1], vec)[0]\n<tab>NameError: name 'cosine_similarity' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"df4 = pd.merge(df1, df2, df3, on='名前', how='outer')\n<tab>TypeError: merge() got multiple values for argument 'how'","out":"同じパラメータが引数とキーワード引数で同時に与えられているので、どちらか取り除いてみましょう。"}
+{"in":"lr = LogisticRegression(random_state=0)<tab>NameError: name 'LogisticRegression' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"print(4*sum(1-1\/a))<tab>IndentationError: expected an indented block (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"K, S= map(input().split())\n<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"X = df_train[['month', 'day', 'week', 'soldout', 'kcal', 'payday', 'weather', 'remarks','temperature',\"curry\"]]\n<tab>KeyError: \"['curry'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"sklearn.metrics.mean_squared_error(平均気温, model.predict(スギ花粉飛散量))<tab>NameError: name 'sklearn' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"  if int(A) <= int(i) <= int(B):\n<tab>TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'","out":"関数の引数の型が違います。<b>文字列、バイト列もしくは数値<\/b>になるようにしましょう。"}
+{"in":"df[df['平均気温'].describe()]<tab>KeyError: \"None of [Float64Index([              18.0, 24.572222222222223,  1.024439907550954,\\n                           22.35,              24.25,             24.475,\\n              25.087500000000002,               27.1],\\n             dtype='float64')] are in the [columns]\"","out":"型エラーです。期待される値と異なる種類の値を使ったときに発生します。文字列でないカラム名が与えられました。"}
+{"in":"X_train = X_train_all[k_l_column[1:]]\n<tab>KeyError: '[\\'a → g\\', \\'a → f\\', \\'a → h\\', \\'a → .\\', \\'a → 0\\', \\'a → *\\', \\'a → >\\', \\'a → x\\', \\'a → Enter\\', \\'a → \"\\', \\'a → ,\\', \\'a → c\\', \\'a → e\\', \\'a → d\\', \\'a → SPACE\\', \\'a → o\\', \\'a → \/\\', \\'a → ]\\', \\'a → Shift\\', \\'a → w\\', \\'a → =\\', \\'a → 2\\', \\'a → p\\', \\'a → u\\', \\'a → )\\', \\'a → (\\', \\'ArrowRight → g\\', \\'ArrowRight → r\\', \\'ArrowRight → *\\', \\'ArrowRight → s\\', \\'ArrowRight → >\\', \\'ArrowRight → \"\\', \\'ArrowRight → c\\', \\'ArrowRight → d\\', \\'ArrowRight → n\\', \\'ArrowRight → l\\', \\'ArrowRight → =\\', \\'ArrowRight → 2\\', \\'ArrowRight → u\\', \\'ArrowRight → )\\', \\'ArrowRight → (\\', \\'g → g\\', \\'g → f\\', \\'g → r\\', \\'g → .\\', \\'g → 0\\', \\'g → *\\', \\'g → s\\', \\'g → m\\', \\'g → >\\', \\'g → x\\', \\'g → \"\\', \\'g → ,\\', \\'g → b\\', \\'g → c\\', \\'g → d\\', \\'g → n\\', \\'g → l\\', \\'g → \/\\', \\'g → ]\\', \\'g → y\\', \\'g → w\\', \\'g → =\\', \\'g → 2\\', \\'g → p\\', \\'g → )\\', \\'g → (\\', \\'f → a\\', \\'f → f\\', \\'f → r\\', \\'f → t\\', \\'f → .\\', \\'f → ArrowLeft\\', \\'f → 0\\', \\'f → *\\', \\'f → s\\', \\'f → m\\', \\'f → >\\', \\'f → Enter\\', \\'f → \"\\', \\'f → ,\\', \\'f → b\\', \\'f → c\\', \\'f → e\\', \\'f → d\\', \\'f → n\\', \\'f → l\\', \\'f → [\\', \\'f → \/\\', \\'f → ]\\', \\'f → y\\', \\'f → w\\', \\'f → =\\', \\'f → 2\\', \\'f → p\\', \\'f → u\\', \\'f → )\\', \\'f → (\\', \\'Backspace → *\\', \\'Backspace → =\\', \\'Backspace → (\\', \\'r → r\\', \\'r → .\\', \\'r → 0\\', \\'r → *\\', \\'r → m\\', \\'r → >\\', \\'r → x\\', \\'r → Enter\\', \\'r → \"\\', \\'r → ,\\', \\'r → b\\', \\'r → c\\', \\'r → d\\', \\'r → l\\', \\'r → [\\', \\'r → \/\\', \\'r → ]\\', \\'r → y\\', \\'r → w\\', \\'r → =\\', \\'r → 2\\', \\'r → p\\', \\'r → )\\', \\'r → (\\', \\'t → r\\', \\'t → 0\\', \\'t → *\\', \\'t → >\\', \\'t → x\\', \\'t → \"\\', \\'t → ,\\', \\'t → b\\', \\'t → d\\', \\'t → o\\', \\'t → l\\', \\'t → [\\', \\'t → ]\\', \\'t → w\\', \\'t → =\\', \\'t → 2\\', \\'t → u\\', \\'t → )\\', \\'t → (\\', \\'h → a\\', \\'h → h\\', \\'h → ArrowLeft\\', \\'h → 0\\', \\'h → *\\', \\'h → m\\', \\'h → >\\', \\'h → x\\', \\'h → Enter\\', \\'h → \"\\', \\'h → b\\', \\'h → c\\', \\'h → d\\', \\'h → n\\', \\'h → o\\', \\'h → l\\', \\'h → [\\', \\'h → ]\\', \\'h → =\\', \\'h → 2\\', \\'h → p\\', \\'h → u\\', \\'h → )\\', \\'h → (\\', \\'. → a\\', \\'. → g\\', \\'. → f\\', \\'. → r\\', \\'. → t\\', \\'. → h\\', \\'. → .\\', \\'. → ArrowLeft\\', \\'. → 0\\', \\'. → *\\', \\'. → m\\', \\'. → >\\', \\'. → x\\', \\'. → Enter\\', \\'. → \"\\', \\'. → ,\\', \\'. → b\\', \\'. → c\\', \\'. → e\\', \\'. → n\\', \\'. → l\\', \\'. → [\\', \\'. → \/\\', \\'. → ]\\', \\'. → y\\', \\'. → w\\', \\'. → =\\', \\'. → 2\\', \\'. → )\\', \\'. → (\\', \\'ArrowLeft → g\\', \\'ArrowLeft → *\\', \\'ArrowLeft → >\\', \\'ArrowLeft → \"\\', \\'ArrowLeft → b\\', \\'ArrowLeft → c\\', \\'ArrowLeft → n\\', \\'ArrowLeft → l\\', \\'ArrowLeft → \/\\', \\'ArrowLeft → =\\', \\'ArrowLeft → 2\\', \\'ArrowLeft → u\\', \\'ArrowLeft → )\\', \\'ArrowLeft → (\\', \\'0 → a\\', \\'0 → g\\', \\'0 → f\\', \\'0 → r\\', \\'0 → t\\', \\'0 → h\\', \\'0 → .\\', \\'0 → ArrowLeft\\', \\'0 → *\\', \\'0 → s\\', \\'0 → m\\', \\'0 → i\\', \\'0 → >\\', \\'0 → x\\', \\'0 → \"\\', \\'0 → ,\\', \\'0 → b\\', \\'0 → c\\', \\'0 → e\\', \\'0 → d\\', \\'0 → n\\', \\'0 → o\\', \\'0 → l\\', \\'0 → [\\', \\'0 → \/\\', \\'0 → y\\', \\'0 → w\\', \\'0 → =\\', \\'0 → 2\\', \\'0 → p\\', \\'0 → u\\', \\'0 → )\\', \\'0 → (\\', \\'* → a\\', \\'* → f\\', \\'* → r\\', \\'* → t\\', \\'* → .\\', \\'* → 0\\', \\'* → *\\', \\'* → s\\', \\'* → m\\', \\'* → i\\', \\'* → >\\', \\'* → Enter\\', \\'* → \"\\', \\'* → ,\\', \\'* → b\\', \\'* → c\\', \\'* → e\\', \\'* → d\\', \\'* → n\\', \\'* → o\\', \\'* → l\\', \\'* → [\\', \\'* → \/\\', \\'* → ]\\', \\'* → y\\', \\'* → w\\', \\'* → =\\', \\'* → 2\\', \\'* → p\\', \\'* → u\\', \\'* → )\\', \\'* → (\\', \\'s → g\\', \\'s → f\\', \\'s → r\\', \\'s → t\\', \\'s → h\\', \\'s → .\\', \\'s → 0\\', \\'s → *\\', \\'s → s\\', \\'s → m\\', \\'s → >\\', \\'s → x\\', \\'s → Enter\\', \\'s → \"\\', \\'s → c\\', \\'s → \/\\', \\'s → ]\\', \\'s → y\\', \\'s → w\\', \\'s → =\\', \\'s → 2\\', \\'s → p\\', \\'s → )\\', \\'s → (\\', \\'m → ArrowRight\\', \\'m → f\\', \\'m → r\\', \\'m → h\\', \\'m → .\\', \\'m → ArrowLeft\\', \\'m → 0\\', \\'m → *\\', \\'m → i\\', \\'m → >\\', \\'m → x\\', \\'m → Enter\\', \\'m → \"\\', \\'m → ,\\', \\'m → b\\', \\'m → c\\', \\'m → e\\', \\'m → d\\', \\'m → SPACE\\', \\'m → o\\', \\'m → l\\', \\'m → [\\', \\'m → \/\\', \\'m → ]\\', \\'m → y\\', \\'m → =\\', \\'m → 2\\', \\'m → p\\', \\'m → u\\', \\'m → )\\', \\'m → (\\', \\'i → a\\', \\'i → 0\\', \\'i → *\\', \\'i → >\\', \\'i → \"\\', \\'i → ,\\', \\'i → c\\', \\'i → o\\', \\'i → l\\', \\'i → [\\', \\'i → ]\\', \\'i → y\\', \\'i → w\\', \\'i → =\\', \\'i → 2\\', \\'i → )\\', \\'i → (\\', \\'> → a\\', \\'> → ArrowRight\\', \\'> → g\\', \\'> → f\\', \\'> → r\\', \\'> → t\\', \\'> → h\\', \\'> → .\\', \\'> → ArrowLeft\\', \\'> → 0\\', \\'> → *\\', \\'> → s\\', \\'> → m\\', \\'> → i\\', \\'> → >\\', \\'> → x\\', \\'> → Enter\\', \\'> → \"\\', \\'> → ,\\', \\'> → b\\', \\'> → c\\', \\'> → e\\', \\'> → d\\', \\'> → n\\', \\'> → o\\', \\'> → l\\', \\'> → [\\', \\'> → \/\\', \\'> → ]\\', \\'> → y\\', \\'> → w\\', \\'> → 2\\', \\'> → p\\', \\'> → u\\', \\'> → )\\', \\'> → (\\', \\'x → a\\', \\'x → g\\', \\'x → f\\', \\'x → r\\', \\'x → t\\', \\'x → h\\', \\'x → ArrowLeft\\', \\'x → 0\\', \\'x → *\\', \\'x → s\\', \\'x → m\\', \\'x → >\\', \\'x → Enter\\', \\'x → \"\\', \\'x → ,\\', \\'x → b\\', \\'x → c\\', \\'x → e\\', \\'x → n\\', \\'x → o\\', \\'x → l\\', \\'x → [\\', \\'x → \/\\', \\'x → ]\\', \\'x → y\\', \\'x → w\\', \\'x → =\\', \\'x → 2\\', \\'x → p\\', \\'x → u\\', \\'x → )\\', \\'x → (\\', \\'Enter → a\\', \\'Enter → g\\', \\'Enter → f\\', \\'Enter → t\\', \\'Enter → h\\', \\'Enter → .\\', \\'Enter → 0\\', \\'Enter → *\\', \\'Enter → s\\', \\'Enter → m\\', \\'Enter → >\\', \\'Enter → x\\', \\'Enter → \"\\', \\'Enter → ,\\', \\'Enter → b\\', \\'Enter → c\\', \\'Enter → e\\', \\'Enter → d\\', \\'Enter → n\\', \\'Enter → SPACE\\', \\'Enter → l\\', \\'Enter → [\\', \\'Enter → \/\\', \\'Enter → ]\\', \\'Enter → y\\', \\'Enter → w\\', \\'Enter → =\\', \\'Enter → u\\', \\'Enter → )\\', \\'Enter → (\\', \\'\" → g\\', \\'\" → f\\', \\'\" → r\\', \\'\" → h\\', \\'\" → 0\\', \\'\" → *\\', \\'\" → m\\', \\'\" → i\\', \\'\" → >\\', \\'\" → x\\', \\'\" → b\\', \\'\" → c\\', \\'\" → e\\', \\'\" → d\\', \\'\" → n\\', \\'\" → l\\', \\'\" → \/\\', \\'\" → y\\', \\'\" → w\\', \\'\" → =\\', \\'\" → u\\', \\'\" → (\\', \\', → g\\', \\', → f\\', \\', → r\\', \\', → h\\', \\', → .\\', \\', → 0\\', \\', → *\\', \\', → m\\', \\', → i\\', \\', → >\\', \\', → x\\', \\', → Enter\\', \\', → \"\\', \\', → b\\', \\', → c\\', \\', → e\\', \\', → d\\', \\', → n\\', \\', → o\\', \\', → l\\', \\', → [\\', \\', → \/\\', \\', → ]\\', \\', → y\\', \\', → w\\', \\', → =\\', \\', → 2\\', \\', → p\\', \\', → u\\', \\', → )\\', \\', → (\\', \\'b → ArrowRight\\', \\'b → g\\', \\'b → r\\', \\'b → h\\', \\'b → .\\', \\'b → ArrowLeft\\', \\'b → 0\\', \\'b → *\\', \\'b → m\\', \\'b → >\\', \\'b → x\\', \\'b → Enter\\', \\'b → \"\\', \\'b → ,\\', \\'b → b\\', \\'b → n\\', \\'b → SPACE\\', \\'b → o\\', \\'b → [\\', \\'b → \/\\', \\'b → ]\\', \\'b → y\\', \\'b → Shift\\', \\'b → w\\', \\'b → =\\', \\'b → 2\\', \\'b → p\\', \\'b → u\\', \\'b → )\\', \\'b → (\\', \\'c → a\\', \\'c → ArrowRight\\', \\'c → g\\', \\'c → f\\', \\'c → r\\', \\'c → t\\', \\'c → .\\', \\'c → ArrowLeft\\', \\'c → 0\\', \\'c → *\\', \\'c → s\\', \\'c → m\\', \\'c → i\\', \\'c → >\\', \\'c → x\\', \\'c → Enter\\', \\'c → \"\\', \\'c → ,\\', \\'c → b\\', \\'c → c\\', \\'c → n\\', \\'c → l\\', \\'c → [\\', \\'c → \/\\', \\'c → ]\\', \\'c → y\\', \\'c → Shift\\', \\'c → w\\', \\'c → =\\', \\'c → 2\\', \\'c → p\\', \\'c → u\\', \\'c → )\\', \\'c → (\\', \\'e → .\\', \\'e → 0\\', \\'e → *\\', \\'e → m\\', \\'e → >\\', \\'e → x\\', \\'e → \"\\', \\'e → b\\', \\'e → c\\', \\'e → n\\', \\'e → [\\', \\'e → ]\\', \\'e → =\\', \\'e → 2\\', \\'e → p\\', \\'e → )\\', \\'e → (\\', \\'d → a\\', \\'d → ArrowRight\\', \\'d → g\\', \\'d → t\\', \\'d → .\\', \\'d → ArrowLeft\\', \\'d → 0\\', \\'d → *\\', \\'d → s\\', \\'d → m\\', \\'d → >\\', \\'d → x\\', \\'d → Enter\\', \\'d → \"\\', \\'d → ,\\', \\'d → b\\', \\'d → c\\', \\'d → d\\', \\'d → n\\', \\'d → SPACE\\', \\'d → o\\', \\'d → l\\', \\'d → \/\\', \\'d → ]\\', \\'d → y\\', \\'d → Shift\\', \\'d → w\\', \\'d → =\\', \\'d → 2\\', \\'d → p\\', \\'d → u\\', \\'d → )\\', \\'d → (\\', \\'n → h\\', \\'n → 0\\', \\'n → *\\', \\'n → >\\', \\'n → x\\', \\'n → Enter\\', \\'n → \"\\', \\'n → ,\\', \\'n → e\\', \\'n → d\\', \\'n → o\\', \\'n → [\\', \\'n → \/\\', \\'n → ]\\', \\'n → w\\', \\'n → =\\', \\'n → 2\\', \\'n → p\\', \\'n → u\\', \\'n → )\\', \\'n → (\\', \\'SPACE → a\\', \\'SPACE → r\\', \\'SPACE → 0\\', \\'SPACE → >\\', \\'SPACE → \"\\', \\'SPACE → b\\', \\'SPACE → n\\', \\'SPACE → [\\', \\'SPACE → ]\\', \\'SPACE → =\\', \\'SPACE → 2\\', \\'SPACE → p\\', \\'SPACE → )\\', \\'SPACE → (\\', \\'o → a\\', \\'o → g\\', \\'o → f\\', \\'o → h\\', \\'o → .\\', \\'o → ArrowLeft\\', \\'o → 0\\', \\'o → *\\', \\'o → s\\', \\'o → >\\', \\'o → x\\', \\'o → Enter\\', \\'o → \"\\', \\'o → ,\\', \\'o → b\\', \\'o → c\\', \\'o → d\\', \\'o → n\\', \\'o → SPACE\\', \\'o → o\\', \\'o → l\\', \\'o → [\\', \\'o → \/\\', \\'o → ]\\', \\'o → y\\', \\'o → Shift\\', \\'o → w\\', \\'o → =\\', \\'o → 2\\', \\'o → p\\', \\'o → u\\', \\'o → )\\', \\'o → (\\', \\'l → a\\', \\'l → ArrowRight\\', \\'l → g\\', \\'l → f\\', \\'l → r\\', \\'l → t\\', \\'l → h\\', \\'l → .\\', \\'l → ArrowLeft\\', \\'l → 0\\', \\'l → *\\', \\'l → m\\', \\'l → >\\', \\'l → x\\', \\'l → Enter\\', \\'l → \"\\', \\'l → ,\\', \\'l → b\\', \\'l → c\\', \\'l → n\\', \\'l → SPACE\\', \\'l → o\\', \\'l → l\\', \\'l → [\\', \\'l → \/\\', \\'l → ]\\', \\'l → y\\', \\'l → Shift\\', \\'l → =\\', \\'l → 2\\', \\'l → p\\', \\'l → u\\', \\'l → )\\', \\'l → (\\', \\'[ → a\\', \\'[ → ArrowRight\\', \\'[ → g\\', \\'[ → f\\', \\'[ → r\\', \\'[ → t\\', \\'[ → h\\', \\'[ → .\\', \\'[ → *\\', \\'[ → m\\', \\'[ → i\\', \\'[ → >\\', \\'[ → x\\', \\'[ → Enter\\', \\'[ → \"\\', \\'[ → ,\\', \\'[ → b\\', \\'[ → c\\', \\'[ → e\\', \\'[ → d\\', \\'[ → n\\', \\'[ → SPACE\\', \\'[ → l\\', \\'[ → [\\', \\'[ → \/\\', \\'[ → y\\', \\'[ → w\\', \\'[ → =\\', \\'[ → p\\', \\'[ → u\\', \\'[ → )\\', \\'[ → (\\', \\'\/ → a\\', \\'\/ → ArrowRight\\', \\'\/ → g\\', \\'\/ → f\\', \\'\/ → r\\', \\'\/ → t\\', \\'\/ → .\\', \\'\/ → 0\\', \\'\/ → *\\', \\'\/ → m\\', \\'\/ → i\\', \\'\/ → >\\', \\'\/ → x\\', \\'\/ → Enter\\', \\'\/ → \"\\', \\'\/ → ,\\', \\'\/ → b\\', \\'\/ → c\\', \\'\/ → e\\', \\'\/ → d\\', \\'\/ → n\\', \\'\/ → o\\', \\'\/ → l\\', \\'\/ → [\\', \\'\/ → ]\\', \\'\/ → y\\', \\'\/ → w\\', \\'\/ → =\\', \\'\/ → p\\', \\'\/ → u\\', \\'\/ → )\\', \\'\/ → (\\', \\'] → a\\', \\'] → g\\', \\'] → f\\', \\'] → r\\', \\'] → t\\', \\'] → h\\', \\'] → 0\\', \\'] → *\\', \\'] → s\\', \\'] → m\\', \\'] → i\\', \\'] → >\\', \\'] → x\\', \\'] → \"\\', \\'] → b\\', \\'] → c\\', \\'] → e\\', \\'] → d\\', \\'] → n\\', \\'] → SPACE\\', \\'] → o\\', \\'] → l\\', \\'] → \/\\', \\'] → ]\\', \\'] → y\\', \\'] → w\\', \\'] → =\\', \\'] → 2\\', \\'] → p\\', \\'] → u\\', \\'] → )\\', \\'] → (\\', \\'y → a\\', \\'y → g\\', \\'y → f\\', \\'y → r\\', \\'y → h\\', \\'y → .\\', \\'y → 0\\', \\'y → *\\', \\'y → s\\', \\'y → m\\', \\'y → i\\', \\'y → >\\', \\'y → x\\', \\'y → \"\\', \\'y → ,\\', \\'y → b\\', \\'y → c\\', \\'y → d\\', \\'y → n\\', \\'y → o\\', \\'y → l\\', \\'y → [\\', \\'y → \/\\', \\'y → ]\\', \\'y → y\\', \\'y → w\\', \\'y → =\\', \\'y → 2\\', \\'y → p\\', \\'y → u\\', \\'y → )\\', \\'y → (\\', \\'Shift → a\\', \\'Shift → g\\', \\'Shift → r\\', \\'Shift → ,\\', \\'Shift → b\\', \\'Shift → c\\', \\'Shift → e\\', \\'Shift → d\\', \\'Shift → n\\', \\'Shift → l\\', \\'Shift → w\\', \\'Shift → u\\', \\'w → a\\', \\'w → ArrowRight\\', \\'w → g\\', \\'w → f\\', \\'w → r\\', \\'w → t\\', \\'w → .\\', \\'w → ArrowLeft\\', \\'w → 0\\', \\'w → *\\', \\'w → s\\', \\'w → m\\', \\'w → >\\', \\'w → x\\', \\'w → Enter\\', \\'w → \"\\', \\'w → ,\\', \\'w → b\\', \\'w → c\\', \\'w → d\\', \\'w → n\\', \\'w → SPACE\\', \\'w → o\\', \\'w → [\\', \\'w → \/\\', \\'w → ]\\', \\'w → y\\', \\'w → Shift\\', \\'w → =\\', \\'w → 2\\', \\'w → p\\', \\'w → u\\', \\'w → )\\', \\'w → (\\', \\'= → a\\', \\'= → ArrowRight\\', \\'= → g\\', \\'= → f\\', \\'= → r\\', \\'= → h\\', \\'= → .\\', \\'= → 0\\', \\'= → *\\', \\'= → s\\', \\'= → m\\', \\'= → i\\', \\'= → >\\', \\'= → x\\', \\'= → Enter\\', \\'= → \"\\', \\'= → ,\\', \\'= → b\\', \\'= → c\\', \\'= → e\\', \\'= → d\\', \\'= → n\\', \\'= → o\\', \\'= → l\\', \\'= → [\\', \\'= → \/\\', \\'= → ]\\', \\'= → Shift\\', \\'= → w\\', \\'= → 2\\', \\'= → u\\', \\'= → )\\', \\'= → (\\', \\'2 → a\\', \\'2 → g\\', \\'2 → f\\', \\'2 → r\\', \\'2 → h\\', \\'2 → .\\', \\'2 → 0\\', \\'2 → *\\', \\'2 → s\\', \\'2 → m\\', \\'2 → i\\', \\'2 → >\\', \\'2 → x\\', \\'2 → \"\\', \\'2 → ,\\', \\'2 → b\\', \\'2 → c\\', \\'2 → d\\', \\'2 → n\\', \\'2 → SPACE\\', \\'2 → o\\', \\'2 → l\\', \\'2 → [\\', \\'2 → \/\\', \\'2 → ]\\', \\'2 → y\\', \\'2 → w\\', \\'2 → =\\', \\'2 → 2\\', \\'2 → p\\', \\'2 → u\\', \\'2 → )\\', \\'2 → (\\', \\'p → g\\', \\'p → f\\', \\'p → h\\', \\'p → .\\', \\'p → ArrowLeft\\', \\'p → 0\\', \\'p → *\\', \\'p → m\\', \\'p → >\\', \\'p → x\\', \\'p → Enter\\', \\'p → \"\\', \\'p → ,\\', \\'p → b\\', \\'p → c\\', \\'p → d\\', \\'p → n\\', \\'p → SPACE\\', \\'p → l\\', \\'p → [\\', \\'p → \/\\', \\'p → ]\\', \\'p → y\\', \\'p → Shift\\', \\'p → =\\', \\'p → 2\\', \\'p → )\\', \\'p → (\\', \\'u → a\\', \\'u → ArrowRight\\', \\'u → r\\', \\'u → t\\', \\'u → .\\', \\'u → 0\\', \\'u → *\\', \\'u → s\\', \\'u → m\\', \\'u → >\\', \\'u → x\\', \\'u → Enter\\', \\'u → \"\\', \\'u → ,\\', \\'u → b\\', \\'u → c\\', \\'u → e\\', \\'u → o\\', \\'u → l\\', \\'u → [\\', \\'u → \/\\', \\'u → ]\\', \\'u → Shift\\', \\'u → w\\', \\'u → =\\', \\'u → 2\\', \\'u → )\\', \\'u → (\\', \\') → a\\', \\') → r\\', \\') → t\\', \\') → h\\', \\') → .\\', \\') → *\\', \\') → s\\', \\') → m\\', \\') → i\\', \\') → >\\', \\') → x\\', \\') → \"\\', \\') → c\\', \\') → e\\', \\') → d\\', \\') → o\\', \\') → l\\', \\') → \/\\', \\') → y\\', \\') → =\\', \\') → 2\\', \\') → p\\', \\') → u\\', \\'( → g\\', \\'( → f\\', \\'( → r\\', \\'( → t\\', \\'( → .\\', \\'( → 0\\', \\'( → *\\', \\'( → i\\', \\'( → >\\', \\'( → Enter\\', \\'( → \"\\', \\'( → b\\', \\'( → d\\', \\'( → n\\', \\'( → o\\', \\'( → l\\', \\'( → \/\\', \\'( → y\\', \\'( → =\\', \\'( → p\\', \\'( → u\\'] not in index'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"    y = df['LUNG_CANCER_num']<tab>KeyError: 'LUNG_CANCER_num'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"    vec[i]=vec2\n<tab>IndexError: list assignment index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"  if i[0]==i[1] or i[0]==i[2] or i[1]==i[2]:<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"      if lives[i][j]==1:<tab>IndexError: index 5 is out of bounds for axis 0 with size 5","out":""}
+{"in":"a.sort()<tab>NameError: name 'a' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"Y <= value <= X\n<tab>NameError: name 'value' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    h = math.sqrt(w \/ 22)<tab>NameError: name 'math' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"model = TheilSenRegresso()\n<tab>NameError: name 'TheilSenRegresso' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"  else BMI>=25:<tab>SyntaxError: invalid syntax (<ipython-input>, line 10)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>else<\/code>では上記の条件にマッチしなかった場合の処理を書きます。<b>条件式は書けません<\/b>。条件式を書きたいときは、<code>elif<\/code>を使いましょう。"}
+{"in":"if S.find(er):\n<tab>NameError: name 'er' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。文字列として<code>\"&lt;A_&gt;\"<\/code>のように囲むべきかも"}
+{"in":"print(y_test.values)<tab>NameError: name 'y_test' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"y_pred = model.predict(X_test<tab>SyntaxError: unexpected EOF while parsing (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"X_train_numa_p = pd.read_csv('train_Numa_print.csv')\n<tab>FileNotFoundError: [Errno 2] No such file or directory: 'train_Numa_print.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"    def __repr__(self): <tab>IndentationError: expected an indented block (<ipython-input>, line 17)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"　　　　D=list(map(int,str(d)))<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"    for j in range(len(next[i]))<tab>SyntaxError: invalid syntax (<string>, line 21)","out":"構文エラー、つまり文法的に書き方が間違っています。まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"    y= f(x)<tab>NameError: name 'f' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"  if X == A[i]:\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"l=print(str(m.replace('1','9')))\n<tab>AttributeError: 'NoneType' object has no attribute 'replace'","out":"レシーバの変数名にNoneを代入してしまいました。"}
+{"in":"    return str(f(N))<tab>NameError: name 'f' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"    x+=1<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。変数を増減するときは、最初に <code>&lt;A_&gt; = 0<\/code>のように初期化しておく必要があります。"}
+{"in":"aa=sorted(a[range(n)][1])\n<tab>TypeError: list indices must be integers or slices, not range","out":""}
+{"in":"X_train = pd.get_dummies(train[['week', 'temperature']])\n<tab>NameError: name 'train' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"b=list.set(a)\n<tab>AttributeError: type object 'list' has no attribute 'set'","out":""}
+{"in":"D = list(map(int,str(d)))<tab>IndentationError: expected an indented block (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"  df.groupby(df[column])['G3'].describe()\n<tab>NameError: name 'column' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    a=int(A[e])<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"sum(0::n)<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。この言語はPythonではないね。（変なコードを貼り付けないで）"}
+{"in":"X = df[[ 'temperture', 'weather']]  # 価格以外を全て説明変数に\n<tab>KeyError: \"['temperture'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"bmi =  PersonW.info(self)<tab>NameError: name 'self' is not defined","out":"<code>self<\/code>はメソッド内のみで使えます"}
+{"in":"df['weather_num']\n<tab>KeyError: 'weather_num'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"vec = model.fit_transform(words)\n<tab>NameError: name 'words' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"plt.plot(df.'西暦',df.'降水量')<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"y<tab>NameError: name 'y' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"X = df[df2.columns[:-1]]  # 価格以外を全て説明変数に\n<tab>KeyError: \"['in', 'or', 'あん', 'いか', 'うどん', 'おろ', 'かじき', 'かつ', 'から', 'きのこ', 'くり', 'ごね', 'ご飯', 'さっ', 'さわら', 'さん', 'さんま', 'しゃぶ', 'すき焼き', 'たっぷり', 'ぬき', 'ねぎ', 'ひやし', 'ひれ', 'ぶり', 'ます', 'やわらか', 'アジ', 'イカ', 'エビ', 'カキフライタルタル', 'カシュー', 'カッシュナッツ', 'カツ', 'カルビ', 'カレイ', 'カレー', 'キス', 'キムチ', 'キャベツ', 'キーマカレー', 'クノーデル', 'クリ', 'クリーミ', 'クリーム', 'クリームチーズ', 'コロッケ', 'コーン', 'ゴーヤチャンプルー', 'サバ', 'サム', 'サーモン', 'サーモンフライ', 'シチュー', 'シャブ', 'ジャンボチキンカツ', 'ジューシーメンチカツ', 'ジョン', 'スイートチリソース', 'スキヤキ', 'スタミナ', 'ステーキ', 'ソテー', 'ソース', 'ソーセージ', 'タルタル', 'タンドリーチキン', 'チキン', 'チキンクリームシチュー', 'チャプチェ', 'チリ', 'チンジャオロース', 'チーズ', 'チーズメンチカツ', 'デミ', 'トマト', 'トンカツ', 'ナッツ', 'ニンニク', 'ハムカツ', 'ハヤシ', 'ハンバーグ', 'ハンバーグカレーソース', 'ハンバーグケッチャップソース', 'ハンバーグデミソース', 'バター', 'バーベキュー', 'ヒレ', 'ビッグメンチカツ', 'ビュッフェ', 'ビーフ', 'ビーフカレー', 'ビーフストロガノフ', 'ピザ', 'ピリ', 'フライ', 'フライタルタル', 'フリカッセ', 'プルコギ', 'ベーコン', 'ホタテ', 'ボローニャ', 'ポーク', 'マスタード', 'マヨ', 'マーボ', 'ムシチュー', 'ムニエル', 'メダイ', 'メンチ', 'ランチ', 'レモンペッパー', 'ロコモコ', 'ロース', '中華', '串カツ', '五目', '入り', '切り', '南蛮', '南部', '名古屋', '味噌', '和風', '団子', '天ぷら', '山賊', '御飯', '手作り', '掛け', '揚げ', '梗菜牛', '洋食', '海老', '添え', '漬け', '炊き込み', '炒め', '焼き', '焼き肉', '照り', '牛肉', '玉子', '甘味噌', '甘辛', '甘酢', '生姜', '白身', '筑前', '肉じゃが', '胡麻', '茄子', '親子', '豆腐', '豚肉', '越冬', '辛味', '辛味噌', '酢豚', '野菜', '韓国'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"h＝1.62<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"l=print(list(int(range(N+1))))<tab>TypeError: int() argument must be a string, a bytes-like object or a number, not 'range'","out":"関数の引数の型が違います。<b>文字列、バイト列もしくは数値<\/b>になるようにしましょう。"}
+{"in":"plt.hist(df['スギ花粉飛散量']<tab>SyntaxError: unexpected EOF while parsing (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"tyu(a,sorted(a))<tab>TypeError: tyu() takes 1 positional argument but 2 were given","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。"}
+{"in":"  newdata.append[]<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"C=[0]*N<tab>SyntaxError: invalid syntax (<string>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"print('体重:'w ,'身長:'h)<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。カンマが必要だよ。"}
+{"in":"  i.append(a)<tab>AttributeError: 'str' object has no attribute 'append'","out":"レシーバがリストになるように修正するといいんじゃないかな<code>append<\/code>はリストに要素を追加するメソッドです。追加できるのは、一度に<b>ひとつ<\/b>だけです。"}
+{"in":"S2=S.replace(S[2],S[3])\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"  print(\"体重:\"w , \"身長:\"h)<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。カンマが必要だよ。"}
+{"in":"    'nativeCountry'<tab>KeyError: \"['maritalStatus', 'nativeCountry'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"              'AG\\ratio']]<tab>KeyError: \"['AG\\\\ratio'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"  print(i)<tab>IndentationError: expected an indented block (<ipython-input>, line 11)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"return(pi*4)<tab>SyntaxError: 'return' outside function (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。関数定義外で<code>return<\/code>文を使っています"}
+{"in":"  print(bird.end=' ')<tab>SyntaxError: keyword can't be an expression (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"c.add(c2)<tab>NameError: name 'c2' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print('R2(訓練):', r2_score(y_train, model.predict(X_train)))<tab>NameError: name 'r2_score' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"  c.appned(kai)<tab>AttributeError: 'list' object has no attribute 'appned'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"c.count()<tab>TypeError: count() missing 1 required positional argument: 'self'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。（どうしてもエラーが解決しないとき）レシーバのインスタンス化が正しく行えず、クラスのままになっていることもあります。"}
+{"in":"50≤B≤A≤300<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"plt.hist(df['スギ花粉の飛散量']), color=plt.get_cmap(\"Spectral\"))<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"x = np.cos(4t)<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。数式の書き方は数学と異なります。 Pythonでは、xyは<code>x * y<\/code>, sinxは<code>sin(x)<\/code>のように書きます。"}
+{"in":"ramdom.ramdom()<tab>NameError: name 'ramdom' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"model.fit('平均気温', '杉花粉')<tab>NameError: name 'model' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"if BMI ≻ 25.0:<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"ifb==0:<tab>IndentationError: expected an indented block (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"for i in C:\n<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"    rho = corr(df[column], df['G3'])<tab>NameError: name 'corr' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"plt.hist(df[G3],bins=20)<tab>NameError: name 'G3' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。文字列として<code>\"&lt;A_&gt;\"<\/code>のように囲むべきかも"}
+{"in":"    return f'counter':[self.counter]<tab>SyntaxError: invalid syntax (<ipython-input>, line 12)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"h,w,x,y=[map(int,input().split()) for w in range(h)]<tab>NameError: name 'h' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  calc(s[i])<tab>TypeError: list indices must be integers or slices, not str","out":""}
+{"in":"​<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"np.random.<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"                  data=fmri)<tab>NameError: name 'fmri' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    print(No)\n<tab>NameError: name 'No' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。文字列として<code>\"&lt;A_&gt;\"<\/code>のように囲むべきかも"}
+{"in":"s = [input() for _ in range(n)]<tab>NameError: name 'n' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  print(col)<tab>IndentationError: unexpected indent (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"model.fit(X_train,y_train) \n<tab>NameError: name 'X_train' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print(\"Hello\"<tab>SyntaxError: unexpected EOF while parsing (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"model = LinearRegression()<tab>NameError: name 'LinearRegression' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"N,K = map(input().split())<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"    sum += int(x[c])<tab>TypeError: string indices must be integers","out":""}
+{"in":"df.head(5)<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"if S[-1]==r and S[-2]==e:\n<tab>NameError: name 'r' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。文字列として<code>\"&lt;A_&gt;\"<\/code>のように囲むべきかも"}
+{"in":"for a in range (1,c+1):\n<tab>NameError: name 'c' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df.head(10)　　<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"else BMI >= 18.50:<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>else<\/code>では上記の条件にマッチしなかった場合の処理を書きます。<b>条件式は書けません<\/b>。条件式を書きたいときは、<code>elif<\/code>を使いましょう。"}
+{"in":"    ln_1 = l[N-2]\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"h=h\/100<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"de.head()<tab>NameError: name 'de' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"  g1=sorted(x,reverse=True)<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"c = [list(map(int, input().split())) for _ in range(n)] <tab>NameError: name 'n' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"model = VotingRegressor()\n<tab>TypeError: __init__() missing 1 required positional argument: 'estimators'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。"}
+{"in":"  w = 19*(h\/100)**2<tab>IndentationError: expected an indented block (<ipython-input>, line 6)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"train['Family'] = train['SibSp'] + train['Parch']<tab>KeyError: 'SibSp'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"ptint(b)<tab>NameError: name 'ptint' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"plot_tree(model, feature_names=X.columns[:-1], filled=True)\n<tab>IndexError: index 11 is out of bounds for axis 0 with size 11","out":""}
+{"in":"X = df['kal','soldout']\n<tab>KeyError: ('kal', 'soldout')","out":"書き方がどこかしら変です。よくお手本を見てください。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"SS[0][1].append(0)\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"df.read(10)<tab>AttributeError: 'DataFrame' object has no attribute 'read'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"X = df[[\"通勤\", \"教員\"]]  # 説明変数\n<tab>KeyError: \"['教員'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"B=str(B)\n<tab>NameError: name 'B' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    X = df[column,column1] # 説明変数df[['部屋数', '築年']]\n<tab>KeyError: ('犯罪率', '緑地')","out":"書き方がどこかしら変です。よくお手本を見てください。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"  x = [int(i) for i in item]\n<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"for letter in len(S):\n<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"  if(a[i]<p):<tab>NameError: name 'p' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  print(sum(i))<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"np.dot(a,b) \/(norm(a)*norm(b))<tab>NameError: name 'a' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"r=s.remove(0,2)\n<tab>TypeError: remove() takes exactly one argument (2 given)","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。"}
+{"in":"  str_x_list__.reverse()\n<tab>NameError: name 'str_x_list__' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"<iframe src=\"https:\/\/docs.google.com\/presentation\/d\/e\/2PACX-1vSGdLpGyEWrmtDJ3zdh02oE7PIwm1Cp_Jz4bWZd0q2mmC1Mck7219dVph070nqcow\/embed?start=false&loop=false&delayms=3000\" frameborder=\"0\" width=\"640\" height=\"389\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"><\/iframe><tab>SyntaxError: invalid syntax (<ipython-input>, line 15)","out":"ここはコメントアウトした方が良さそうですね。"}
+{"in":"percent = 100 * df.isnull().sum()\/len(df)<tab>IndentationError: expected an indented block (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"    if dfs(nodes, v):<tab>TypeError: dfs() missing 1 required positional argument: 'i'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"df = pd.concat([train_df, test_df], ignore_index=True)<tab>NameError: name 'train_df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"  print(f'N={i}'.clac_pi(i))<tab>AttributeError: 'str' object has no attribute 'clac_pi'","out":"構文エラー、つまり文法的に書き方が間違っています。カンマが変だね。"}
+{"in":"sum=n(n+1)\/2\n<tab>NameError: name 'n' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"sns.boxplot(x=df['父職業'], y=df['市内'], order=order_by)<tab>KeyError: '市内'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"model = Pipeline()\n<tab>TypeError: __init__() missing 1 required positional argument: 'steps'","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。"}
+{"in":"    y = X**2 + 2*x +3<tab>NameError: name 'X' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"X_train_numa_p = pd.read_csv('drive\/MyDrive\/nuna-chan\/train_Numa_print.csv')\n<tab>FileNotFoundError: [Errno 2] No such file or directory: 'drive\/MyDrive\/nuna-chan\/train_Numa_print.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"    return self.(22 * self.height * self.height) \/ 10000<tab>SyntaxError: invalid syntax (<ipython-input>, line 20)","out":""}
+{"in":"model = PassiveAggressiveRegressor(max_depth=3)\n<tab>TypeError: __init__() got an unexpected keyword argument 'max_depth'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"add\n<tab>NameError: name 'add' is not defined","out":"ここはコメントアウトした方が良さそうですね。"}
+{"in":"plt.boxplot([df['父職業'])<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"w ＝ 47.4<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"def f(x):<tab>SyntaxError: invalid syntax (<ipython-input>, line 11)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"print(y<tab>SyntaxError: unexpected EOF while parsing (<ipython-input>, line 5)","out":"構文エラー、つまり文法的に書き方が間違っています。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"pd.crosstab(train['Ticket'].map(lambda x: str(x)[0]),train['train_or_test'])<tab>KeyError: 'train_or_test'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"plt.xlabel('G3')<tab>TypeError: 'str' object is not callable","out":"関数に間違って代入してしまったため、関数が別の値に書き換えられています。ランタイムの再起動がすること回復します。"}
+{"in":"w ＝ 47.4<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"    self.a = a \/\/ math.gcd(a,b)<tab>NameError: name 'math' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"X = df[df.columns[soldout,kcal,payday,temperature]]\n<tab>NameError: name 'soldout' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。文字列として<code>\"&lt;A_&gt;\"<\/code>のように囲むべきかも"}
+{"in":"n=math.ceil(N\/100) #math.ceil() 小数点以下切り下げ<tab>NameError: name 'N' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"S.replace=(S[1],S[2])\n<tab>AttributeError: 'str' object attribute 'replace' is read-only","out":""}
+{"in":"Z.append(d)<tab>NameError: name 'Z' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = []<\/code>のように空のリストを作っておこう"}
+{"in":"    K.appned(x)<tab>AttributeError: 'list' object has no attribute 'appned'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"S.replace('x','0')\n<tab>AttributeError: 'list' object has no attribute 'replace'","out":"レシーバがリストになるように修正するといいんじゃないかな"}
+{"in":"    Xi = x \/\/ (10 ** i) % 10<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"a=len(int(S))<tab>TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'","out":"関数の引数の型が違います。<b>文字列、バイト列もしくは数値<\/b>になるようにしましょう。"}
+{"in":"A,B,C=map(int,input().splirt())\n<tab>AttributeError: 'str' object has no attribute 'splirt'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"  list_S[i], list_S[i+1] = list_S[i+1], list_S[i]\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"print(f'正解率(訓練)', model.score(X_train, y_train))<tab>NameError: name 'X_train' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"df7.drop('チーム名', axis=1, inplace=True)\n<tab>KeyError: \"['チーム名'] not found in axis\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"  if a <= S(i) <= b:<tab>NameError: name 'S' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"dc['大気汚染']<tab>NameError: name 'dc' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"      A = min(i)<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"df3=df3['体重'].fillna(df3['体重'].mean())\n<tab>KeyError: '体重'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"for column in df.colums[:-1]:\n<tab>AttributeError: 'DataFrame' object has no attribute 'colums'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"    if (S[2*i-1].isupper() or S[2*i].islower()) and 2*i-1>len(S):\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"a=format('N', X)<tab>TypeError: format() argument 2 must be str, not int","out":"関数の第&lt;B&gt;引数の型が違います。<b>文字列<\/b>になるようにしましょう。"}
+{"in":"    y=abc(f(x,n)) #絶対値<tab>NameError: name 'abc' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"print(a[3])<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"  else:<tab>SyntaxError: invalid syntax (<ipython-input>, line 7)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが変です。対応する<code>if<\/code>文とインデントの深さをあわせてみたら"}
+{"in":"if S[3]==S[4] and S[5]==S[6]:\n<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"print(acd)<tab>NameError: name 'acd' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"c = Fraction(1,2).add(Fraction(1,3))<tab>AttributeError: 'Fraction' object has no attribute 'add'","out":"<code>&lt;A_&gt;<\/code>クラスの適切なメソッド名に変更してください"}
+{"in":"df.read_csv('pollen.csv')<tab>NameError: name 'df' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"if S[3-1] == S[4-1] and S[5-1] == S[6-1]:\n<tab>IndexError: tuple index out of range","out":"添字がタプルの要素数を超えないようにしましょう。"}
+{"in":"df['event']=df['eventr'].map({\n<tab>KeyError: 'eventr'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"plt.plot(x, y)<tab>NameError: name 'x' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"print（f'w: {w:. 2f}')<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。全角文字が使われています。"}
+{"in":"p.soul_number()<tab>TypeError: soul_number() takes 0 positional arguments but 1 was given","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>から余分な引数を消してください。定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"  person.info()<tab>IndentationError: unexpected indent (<ipython-input>, line 25)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"plt.ylabel('降水量')))<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"SS[0][1][2].append(0)\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"  if int(S[j]) == 1:\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"  return sum([int(d) for d in str(n)])<tab>TypeError: 'int' object is not callable","out":"<code>sum<\/code>に値を代入したため、<code>sum<\/code>が関数として使えなくなりました。"}
+{"in":"sns.set(pallete='chartreuse')<tab>TypeError: set_theme() got an unexpected keyword argument 'pallete'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"min=s<tab>NameError: name 's' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"  if k=0:<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。条件では<code>=<\/code>の代わりに、<code>==<\/code>を使います。（ちゃんと区別してね）"}
+{"in":">>>np.linalg.norm(X, ord = 0)<tab>SyntaxError: invalid syntax (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。うまく指摘できませんが、余分なゴミがついています。（変なコピペした？）"}
+{"in":"s=0<tab>IndentationError: expected an indented block (<ipython-input>, line 10)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"  　print(\"正の数\")<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"pd.read_csv('平均気温', precision=True)<tab>TypeError: read_csv() got an unexpected keyword argument 'precision'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"        C[i+j] = min(C[i+j], C[i]+abs(h[i]-h[i+j]))<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"    ans += list2[j]*int(cal_num[j])<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"a=n.replace(1,9)\n<tab>TypeError: replace() argument 1 must be str, not int","out":"関数の第&lt;B&gt;引数の型が違います。<b>文字列<\/b>になるようにしましょう。"}
+{"in":"plt.scatter(df['犯罪'], df['住宅価格'], alpha=0.5)<tab>KeyError: '犯罪'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"print(\"score:\", accuracy_score(y_test, y_pred))<tab>NameError: name 'y_test' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"else BMI >= 18.50 :<tab>SyntaxError: invalid syntax (<ipython-input>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。コロンが必要だよ"}
+{"in":"X = df['通勤', '教員']  # 説明変数\n<tab>KeyError: ('通勤', '教員')","out":"書き方がどこかしら変です。よくお手本を見てください。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"plt.hist(df['住宅価格']),bins=20<tab>SyntaxError: can't assign to function call (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。キーワード引数は、key=valueの形式で指定する引数です。同じkeyを繰り返してはいけません。通常の引数の<b>あとに<\/b>続けて書きます。"}
+{"in":"model = LinearRegression()<tab>NameError: name 'LinearRegression' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"train_df=pd.read_csv(\"train.csv\")<tab>FileNotFoundError: [Errno 2] No such file or directory: 'train.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"df = pd.read_csv('boston.csv')\n<tab>FileNotFoundError: [Errno 2] No such file or directory: 'boston.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"print max(A + B or B + C or A + C)<tab>SyntaxError: invalid syntax (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。現在のPythonでは、<code>print<\/code>は関数です。<code>print(X, Y)<\/code>のように出力する内容を括弧で囲みます。Pythonの書き方を調べるときは、Python3.0以降の書き方を参考にしましょう。"}
+{"in":"        text_list = tokenize(text, maps=)<tab>SyntaxError: invalid syntax (<ipython-input>, line 21)","out":"構文エラー、つまり文法的に書き方が間違っています。キーワード引数は、key=valueの形式で指定する引数です。同じkeyを繰り返してはいけません。通常の引数の<b>あとに<\/b>続けて書きます。まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"a=list(map(input().split()))\n<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"if A==B:<tab>SyntaxError: invalid syntax (<string>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。前の行でエラーになっている可能性もあります。<code>)<\/code>を閉じ忘れています。もしくは<code>(<\/code>が余分で多すぎるときもあります。"}
+{"in":"A=N%10\n<tab>TypeError: not all arguments converted during string formatting","out":"文字列のモジュロ（余り）を計算しようとしています。数値に変換してから計算してね。"}
+{"in":"kogiも忘れずに\n<tab>NameError: name 'kogiも忘れずに' is not defined","out":"ここはコメントアウトした方が良さそうですね。"}
+{"in":"plt.plot(weights, BMI155, label=\"155cm\")<tab>NameError: name 'BMI155' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"if N%10==2 or N%10==4 or N%10==5 or N%10==7 or N%10==9:\n<tab>TypeError: not all arguments converted during string formatting","out":"文字列のモジュロ（余り）を計算しようとしています。数値に変換してから計算してね。"}
+{"in":"for i in N:<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"    print(N[-4,-3])<tab>TypeError: string indices must be integers","out":""}
+{"in":"    ans += list2[j]*int(cal_num[j])<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"  hh = abs(h[n]-h[n-1])\n<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"A,B=list(map( input().split()))\n<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"X = df[['weather_num','precipiation_num']]\n<tab>KeyError: \"['precipiation_num'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"  if d == 11 or d == 22 or d == 33 or d == 44:<tab>IndentationError: unexpected indent (<ipython-input>, line 7)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"N=N-<tab>SyntaxError: invalid syntax (<string>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。まだ途中ですね。ちゃんと書き終えてから実行してね。"}
+{"in":"    else if C == A :<tab>SyntaxError: invalid syntax (<ipython-input>, line 4)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが変です。対応する<code>if<\/code>文とインデントの深さをあわせてみたら"}
+{"in":" 50≤B≤A≤300<tab>IndentationError: unexpected indent (<string>, line 3)","out":"構文エラー、つまり文法的に書き方が間違っています。インデントが余分だよ。"}
+{"in":"plt.scatter(df['部屋数'],df['住宅自宅'])<tab>KeyError: '住宅自宅'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"X=df[['低所得率','通年']] \n<tab>KeyError: \"['通年'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"    print( A[ j ][ i ] )<tab>IndexError: string index out of range","out":"添字が文字列長を超えないようにしましょう。"}
+{"in":"df['住宅価格']<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"Xlist(map(int,input().split()))<tab>NameError: name 'Xlist' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"    update_display(HTML(f'<span>{s}<\/span>'))\n<tab>TypeError: update_display() missing 1 required keyword-only argument: 'display_id'","out":""}
+{"in":"ans=collections.counter(s)<tab>AttributeError: module 'collections' has no attribute 'counter'","out":"たぶん軽微な打ち間違いです。落ち着いて入力し直して"}
+{"in":"X = torch.tensor(X.values, dtype=torch.float32)\n<tab>NameError: name 'torch' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"df[df['平均気温']].head(5)<tab>KeyError: '平均気温'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"df.head(pollen.csv)<tab>NameError: name 'df' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A&gt; = pd.read_csv(...)<\/code>を使って、データフレームを読んでおきましょう"}
+{"in":"plt.hist(df['アルコール量'], bins=20)<tab>KeyError: 'アルコール量'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"math.sin(30）<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"        print(\"\"普通体重)<tab>SyntaxError: invalid syntax (<ipython-input>, line 10)","out":"構文エラー、つまり文法的に書き方が間違っています。"}
+{"in":"a=list(n)\n<tab>TypeError: 'int' object is not iterable","out":""}
+{"in":"kogi.rmt(TransformWeaver=None)<tab>TypeError: rmt() got an unexpected keyword argument 'TransformWeaver'","out":"キーワード引数は使えません。タイプミスでなければ、取り除いてみましょう。"}
+{"in":"parse_digit()<tab>NameError: name 'parse_digit' is not defined","out":"関数は未定義です。関数は使う前にインポートするか関数定義する必要があります。"}
+{"in":"S, T = list(map(input().split()))<tab>TypeError: map() must have at least two arguments.","out":"パラメータ数が一致しません。<code>&lt;A&gt;<\/code>に足りない引数を加えましょう。<code>map(int, input().split())<\/code>は入力から<b>２つ以上の<\/b>整数を読む書き方です。ひとつの整数を読むのは、単に<code>int(input())<\/code>とします。"}
+{"in":"y = torch.tensor(mnist.target, t.values, dtype=torch.int64)\n<tab>NameError: name 't' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"X = df['通勤', '教員比']\n<tab>KeyError: ('通勤', '教員比')","out":"書き方がどこかしら変です。よくお手本を見てください。データフレームdfの複数のカラムは、カラム名のリストを使って<code>df[\"A\", \"B\", \"C\"]<\/code>のように指定します。"}
+{"in":"y = df['販売数']\n<tab>KeyError: '販売数'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"np.where(a < pibot)<tab>NameError: name 'pibot' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"train['Cabin'] = train['Cabin'].fillna(0)<tab>KeyError: 'Cabin'","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"n % 10<tab>NameError: name 'n' is not defined","out":"変数は未定義です。つまり、まだ一度も値が代入されていません。先に、<code>&lt;A_&gt; = 0<\/code>のように値を代入して初期化しておこう。"}
+{"in":"list = [int(i) for i in list(inpt)]<tab>NameError: name 'inpt' is not defined","out":"たぶん、ミススペルです。"}
+{"in":"df['year'] = df['datetime'].apply(lambda x : x.split('-')[0])\n<tab>AttributeError: 'float' object has no attribute 'split'","out":"レシーバが文字列になるように修正するといいんじゃないかな"}
+{"in":"  b=A[e+1]<tab>IndexError: list index out of range","out":"添字がリストの要素数を超えないようにしましょう。"}
+{"in":"X = df[['低所得率', '川辺']]\n<tab>KeyError: \"['川辺'] not in index\"","out":"指定されたカラム名がデータフレームにありません。"}
+{"in":"r.frac()<tab>AttributeError: 'Ratio' object has no attribute 'frac'","out":"定義した関数やメソッドを修正した方がいい場合もあります。"}
+{"in":"return a<tab>SyntaxError: 'return' outside function (<ipython-input>, line 2)","out":"構文エラー、つまり文法的に書き方が間違っています。関数定義外で<code>return<\/code>文を使っています"}
+{"in":"  list_S = list_S.append(S[i])\n<tab>AttributeError: 'NoneType' object has no attribute 'append'","out":"レシーバの変数名にNoneを代入してしまいました。"}
+{"in":"plt.plot(wights,newdata,label='175cm')<tab>NameError: name 'plt' is not defined","out":"たぶんインポートし忘れています。"}
+{"in":"print(199999999999999999999999+2999999999）<tab>SyntaxError: invalid character in identifier (<ipython-input>, line 1)","out":"構文エラー、つまり文法的に書き方が間違っています。全角空白が使われています。"}
+{"in":"train = pd.read_csv('train.csv')\n<tab>FileNotFoundError: [Errno 2] No such file or directory: 'train.csv'","out":"ファイルが見つかりません。ファイルをまだダウンロードしていないか、ファイルパスの指定が間違っています。"}
+{"in":"  a=a[list(map(str,input().split()))]\n<tab>TypeError: list indices must be integers or slices, not list","out":""}
